@@ -1757,5 +1757,18 @@ header {
     transform: scale(1.6); /* Add scaling on hover */
     transition: transform 0.3s ease;
 }
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="checkbox"], button {
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+}
 /* SECTION - 10 MEDIA QUERY END */
 /* SECTION - 10 END */
