@@ -1553,6 +1553,59 @@
             </div>
         </div>
         <!-- MODAL FOR FORM END   -->
+
+
+        <!-- MODAL FOR Price Calculator Starts -->
+        <div class="modal fade" id="PriceCalculatorModal" tabindex="-1" aria-labelledby="FormModalLabel"
+        aria-hidden="true" style="z-index: 99999999;">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-0" style="border:2px solid #1bce7c;">
+                <div class="modal-header position-relative py-4">
+                    <h5 class="modal-title text-center w-100 text-uppercase position-absolute"
+                        id="FormModalLabel"
+                        style="font-size:15px;color:#1bce7c;font-weight:700;letter-spacing: 0.2em;">
+                        Calculate the cost</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="z-index:2500;">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="paymentForm">
+                        <div>
+                            <label>Today's Date: <span id="currentDate"></span></label>
+                        </div>
+                        <div id="earlyBirdMessage" class="message"></div>
+                        <div>
+                            <label>Registration Type:</label>
+                            <select id="registrationType">
+                                <option value="student">Student</option>
+                                <option value="academia">Academia</option>
+                                <option value="non-academia">Non-Academia</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Need Accommodation?</label>
+                            <select id="accommodation">
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                        </div>
+                        <div id="accommodationOptions" style="display: none;">
+                            <label>Accommodation Type:</label>
+                            <select id="accommodationType">
+                                <!-- Options will be filled by JS -->
+                            </select>
+                        </div>
+                        <div>
+                            <button type="button" onclick="calculatePrice()">Calculate Price</button>
+                        </div>
+                    </form>
+                    <div id="result"></div>
+                </div>
+                </div>
+                </div>
+        </div>
+    <!-- MODAL FOR Price Calculator Ends-->
             
             <div class="row mb-5 justify-content-center" style="margin-bottom: 2rem!important;">
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
@@ -1727,6 +1780,18 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row mb-5 justify-content-center" style="margin-bottom: 4rem!important;">
+                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
+                    data-wow-duration="1s" data-wow-delay="0.3s">
+                        <div class="pricing-btn">
+                            <button data-mdb-ripple-color="success" type="submit"
+                                class="btn btn-lg btn-price px-5 mb-4 md-trigger" 
+                                data-bs-toggle="modal" data-bs-target="#PriceCalculatorModal">Calculate the cost</button>
+                    </div>
+                </div>
+            </div>
+
 
             
 

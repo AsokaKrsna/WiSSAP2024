@@ -30,7 +30,7 @@ html{
 
 .speaker-img {
     object-fit: cover; /* Ensures images cover the area */
-    height: 450px; /* Set a fixed height */
+    height: 300px; /* Set a fixed height */
 }
 
 ::-webkit-scrollbar {
@@ -1757,5 +1757,20 @@ header {
     transform: scale(1.6); /* Add scaling on hover */
     transition: transform 0.3s ease;
 }
+
+#paymentForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#paymentForm select, 
+#paymentForm input[type="checkbox"], 
+#paymentForm button {
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+}
+
 /* SECTION - 10 MEDIA QUERY END */
 /* SECTION - 10 END */

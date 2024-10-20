@@ -525,3 +525,83 @@ $("#closebutton").click(function(){
             }, false)
         })
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentDateElement = document.getElementById('currentDate');
+    const registrationTypeElement = document.getElementById('registrationType');
+    const accommodationElement = document.getElementById('accommodation');
+    const accommodationOptions = document.getElementById('accommodationOptions');
+    const accommodationTypeElement = document.getElementById('accommodationType');
+    const resultElement = document.getElementById('result');
+    const earlyBirdMessageElement = document.getElementById('earlyBirdMessage');
+
+    // Prices
+    const earlyBirdDate = new Date('2024-11-20'); // Early bird deadline
+    const earlyBirdPrices = { student: 100, academia: 150, 'non-academia': 200 };
+    const regularPrices = { student: 150, academia: 200, 'non-academia': 250 };
+    const studentAccommodation = ['Dorm - ₹50', 'Shared Room - ₹75'];
+    const nonStudentAccommodation = ['Hotel - ₹150', 'Private Room - ₹200'];
+
+    // Get the current date based on the user's timezone
+    const currentDate = new Date();
+    currentDateElement.innerText = currentDate.toDateString();
+
+    // Show the Early Bird or Missed message immediately when the page loads
+    if (currentDate <= earlyBirdDate) {
+        earlyBirdMessageElement.innerHTML = "<h4 style='color: green; text-style: justified;'>You are eligible for the Early Bird discount and it will be automatically applied while calculating price</h4>";
+    } else {
+        earlyBirdMessageElement.innerHTML = "<h4 style='color: red; text-style: justified;'>Ahaah! You missed the Early Bird Discount</h4>";
+    }
+
+    // Show accommodation options based on the registration type
+    registrationTypeElement.addEventListener('change', function() {
+        if (accommodationElement.value === 'yes') {
+            updateAccommodationOptions();
+        }
+    });
+
+    // Show/hide accommodation options based on the "Yes" or "No" value
+    accommodationElement.addEventListener('change', function() {
+        if (accommodationElement.value === 'yes') {
+            updateAccommodationOptions();
+            accommodationOptions.style.display = 'block';
+        } else {
+            accommodationOptions.style.display = 'none';
+        }
+    });
+
+    function updateAccommodationOptions() {
+        const registrationType = registrationTypeElement.value;
+        let options = [];
+
+        if (registrationType === 'student') {
+            options = studentAccommodation;
+        } else {
+            options = nonStudentAccommodation;
+        }
+
+        accommodationTypeElement.innerHTML = '';
+        options.forEach(option => {
+            const opt = document.createElement('option');
+            opt.value = option;
+            opt.innerText = option;
+            accommodationTypeElement.appendChild(opt);
+        });
+    }
+
+    // Calculate the total price
+    window.calculatePrice = function() {
+        const registrationType = registrationTypeElement.value;
+        const prices = currentDate <= earlyBirdDate ? earlyBirdPrices : regularPrices;
+        let total = prices[registrationType];
+
+        if (accommodationElement.value === 'yes') {
+            const accommodationCost = accommodationTypeElement.value.split(' - ₹')[1];
+            total += parseFloat(accommodationCost);
+        }
+
+        resultElement.innerHTML = `<h2>Total Price: ₹${total}</h2>`;
+    }
+});
+
+
