@@ -1819,5 +1819,15 @@ header {
 .organizer-img-content h6 {
     color: white;
 }
+
+
+.organizer-block {
+    transition: var(--primaryTransition) !important;
+    cursor: pointer;
+}
+
+.organizer-block:hover {
+    transform: scale(1.05) !important;
+}
 /* SECTION - 10 MEDIA QUERY END */
 /* SECTION - 10 END */
