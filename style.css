@@ -1772,5 +1772,52 @@ header {
     width: 100%;
 }
 
+
+
+.organizer-pictures-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.organizer-pictures {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Should be the same as width */
+    border: 5px solid transparent;
+    border-radius: 50%;
+    transition: border-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.organizer-pictures img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.organizer-img-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.organizer-pictures:hover .organizer-img-content {
+    opacity: 1;
+}
+
+.organizer-img-content i,
+.organizer-img-content h6 {
+    color: white;
+}
 /* SECTION - 10 MEDIA QUERY END */
 /* SECTION - 10 END */
