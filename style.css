@@ -107,8 +107,18 @@ body {
     transition: var(--primaryTransition);
 }
 
+.navbar-brand img {
+    max-height: 50px; /* Adjust the height as needed */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
 .custom-nav-item {
-    padding: 0px 20px;
+    padding: 0px 8px;
 }
 
 .custom-nav-link {
