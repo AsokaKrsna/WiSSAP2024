@@ -107,8 +107,18 @@ body {
     transition: var(--primaryTransition);
 }
 
+.navbar-brand img {
+    max-height: 50px; /* Adjust the height as needed */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
 .custom-nav-item {
-    padding: 0px 20px;
+    padding: 0px 8px;
 }
 
 .custom-nav-link {
@@ -348,6 +358,7 @@ header {
     position: relative;
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
+    backface-visibility: hidden;
     -moz-backface-visibility: hidden;
 }
 
@@ -363,14 +374,17 @@ header {
 .custom-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
+    transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
 }
 
 .custom-carousel .owl-item,
 .custom-carousel .owl-wrapper {
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -379,6 +393,7 @@ header {
 .custom-carousel .owl-item {
     min-height: 1px;
     float: left;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-touch-callout: none;
 }
@@ -516,6 +531,7 @@ header {
     background: url(owl.video.play.png) no-repeat;
     cursor: pointer;
     z-index: 1;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: transform .1s ease;
 }
