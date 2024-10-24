@@ -1083,15 +1083,13 @@
                                 </ul>
                                 <div class="social-media w-100 text-center mb-3">
                                     <!-- Facebook -->
-                                    <a class="btn btn-primary btn-floating me-2" data-mdb-ripple-color="dark"
-                                        style="background-color: #3b5998;" href="https://in.linkedin.com/in/pranaw-kumar-03a65118?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" role="button"><i
-                                            class="fa fa-user"></i></a>
+                                        <a href="https://in.linkedin.com/in/pranaw-kumar-03a65118?original_referer=https%3A%2F%2Fwww.google.com%2F" class="btn btn-outline-info" role="button" target="_blank">Click to know more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="md-modal md-effect-9" id="modal-27">
+                    <div class="md-modal md-effect-9" id="modal-28">
                         <div class="md-content bg-dark">
                             <div class="md-content-header p-3">
                                 <i class="fas fa-times float-end md-close" style="font-size: 20px;cursor: pointer;"></i>
@@ -1124,7 +1122,7 @@
                     </div>
 
                     <!-- MODAL POPUP END   -->
-                    <div class="owl-carousel owl-theme">
+                    <div class="custom-carousel owl-carousel owl-theme">
                         <div class="col-md-12">
                             <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s"
                                 data-wow-delay="0.3s">
@@ -1143,7 +1141,7 @@
                                 </div>
                                 <div class="speaker-desc">
                                     <p>Speech, Music and Vision Laboratory <br>
-                                        Department of Computer Science and Engineering <br>
+                                        Department of CSE<br>
                                         Indian Institute of Technology (IIT) Madras Chennai, India
                                         </p>
                                 </div>
@@ -1194,7 +1192,7 @@
                                     <h4 style="color:#FEEDCF;">-Academic Expert-</h4>
                                 </div>
                                 <div class="speaker-desc">
-                                    <p>Department of Humanities and Social Sciences<br>
+                                    <p>Department of HSS<br>
                                         Centre for Linguistic Science and Technology<br>
                                         Indian Institute of Technology (IIT) Guwahati, Assam, India
                                         </p>
@@ -1476,7 +1474,7 @@
                                     <div class="col-md-12">
                                         <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s"
                                             data-wow-delay="0.3s">
-                                            <div class="md-trigger" data-modal="modal-90">
+                                            <div class="md-trigger" data-modal="modal-28">
                                                 <div class="speaker-pictures position-relative">
                                                     <div class="speaker-img-content position-absolute">
                                                         <i class="fas fa-search"></i>
@@ -1511,7 +1509,7 @@
                 <div class="col-md-12">
                     <div class="pricing-heading text-center mt-5 mb-5 wow animated fadeInDown" data-wow-duration="1s"
                         data-wow-delay="0.5s" style="margin-top: 6rem !important;">
-                        <h1 class="mb-5">Register</h1>
+                        <h1 class="mb-5">Registration</h1>
                         <p class="mb-5" style="margin-bottom: 5rem !important;">See what you get during the event.
                         </p>
                     </div>
@@ -1556,67 +1554,76 @@
 
 
         <!-- MODAL FOR Price Calculator Starts -->
-        <div class="modal fade" id="PriceCalculatorModal" tabindex="-1" aria-labelledby="FormModalLabel"
-        aria-hidden="true" style="z-index: 99999999;">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content rounded-0" style="border:2px solid #1bce7c;">
-                <div class="modal-header position-relative py-4">
-                    <h5 class="modal-title text-center w-100 text-uppercase position-absolute"
-                        id="FormModalLabel"
-                        style="font-size:15px;color:#1bce7c;font-weight:700;letter-spacing: 0.2em;">
-                        Calculate the cost</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                        style="z-index:2500;">
-                    </button>
+        <div class="modal fade" id="PriceCalculatorModal" tabindex="-1" aria-labelledby="FormModalLabel" aria-hidden="true" style="z-index: 99999999;">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content rounded-0" style="border:2px solid #1bce7c;">
+                    <div class="modal-header position-relative py-4">
+                        <h5 class="modal-title text-center w-100 text-uppercase position-absolute" id="FormModalLabel" 
+                            style="font-size:15px;color:#1bce7c;font-weight:700;letter-spacing: 0.2em;">
+                            Calculate the cost
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="z-index:2500;"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="paymentForm">
+                            <div>
+                                <label>Today's Date: <span id="currentDate"></span></label>
+                            </div>
+                            <div id="earlyBirdMessage" class="message"></div>
+                            <div>
+                                <label>Registration Type:</label>
+                                <select id="registrationType" class="form-control">
+                                    <option value="student">Student</option>
+                                    <option value="academia">Academia</option>
+                                    <option value="non-academia">Non-Academia</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Need Accommodation?</label>
+                                <select id="accommodation" class="form-control">
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+                                </select>
+                            </div>
+                            <div id="accommodationDates" style="display: none;">
+                                <div>
+                                    <label>Check-in Date:</label>
+                                    <input type="date" id="checkInDate" class="form-control">
+                                </div>
+                                <div>
+                                    <label>Check-out Date:</label>
+                                    <input type="date" id="checkOutDate" class="form-control">
+                                </div>
+                                <div>
+                                    <label>Accommodation Type:</label>
+                                    <input type="text" id="accommodationType" class="form-control" readonly>
+                                </div>
+                                <div>
+                                    <label>Number of Days:</label>
+                                    <span id="numberOfDays">0</span>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button type="button" class="btn btn-success w-100" onclick="calculatePrice()">Calculate Price</button>
+                            </div>
+                        </form>
+                        <div id="result" class="mt-3"></div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form id="paymentForm">
-                        <div>
-                            <label>Today's Date: <span id="currentDate"></span></label>
-                        </div>
-                        <div id="earlyBirdMessage" class="message"></div>
-                        <div>
-                            <label>Registration Type:</label>
-                            <select id="registrationType">
-                                <option value="student">Student</option>
-                                <option value="academia">Academia</option>
-                                <option value="non-academia">Non-Academia</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label>Need Accommodation?</label>
-                            <select id="accommodation">
-                                <option value="no">No</option>
-                                <option value="yes">Yes</option>
-                            </select>
-                        </div>
-                        <div id="accommodationOptions" style="display: none;">
-                            <label>Accommodation Type:</label>
-                            <select id="accommodationType">
-                                <!-- Options will be filled by JS -->
-                            </select>
-                        </div>
-                        <div>
-                            <button type="button" onclick="calculatePrice()">Calculate Price</button>
-                        </div>
-                    </form>
-                    <div id="result"></div>
-                </div>
-                </div>
-                </div>
+            </div>
         </div>
     <!-- MODAL FOR Price Calculator Ends-->
             
             <div class="row mb-5 justify-content-center" style="margin-bottom: 2rem!important;">
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
+                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#formModal">
                     <div class="pricing-block text-center">
                         <div class="price-tag">
                             <h1 style="margin: -20px;">INR 2000</h1>
                             <h4>Early Bird</h4>
                             <h6>(Valid till 20 Nov'24) </h6>
                             <div class="price-tag-desc" style="background:#CD7F32 !important; color: #000 !important;">
-                                <h5>STUDENT (KLEFV)</h5>
+                                <h5>STUDENT</h5>
                             </div>
                             <!--
                             <div class="price-content">
@@ -1637,87 +1644,27 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
+                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#formModal">
                     <div class="pricing-block text-center">
                         <div class="price-tag">
                             <h1 style="margin: -20px;">INR 3000</h1>
                             <h4>Regular</h4>
                             <h6>(From 21 Nov' 2024)</h6>
                             <div class="price-tag-desc" style="background:#CD7F32 !important; color: #000 !important;">
-                                <h5>STUDENT (KLEFV)</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="pricing-block text-center">
-                        <div class="price-tag">
-                            <h1 style="margin: -20px;">INR 4000</h1>
-                            <h4>Early Bird</h4>
-                            <h6>(Valid till 20 Nov'24) </h6>
-                            <div class="price-tag-desc" style="background:#CD7F32 !important; color: #000 !important;">
                                 <h5>STUDENT</h5>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                
-
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
+                    data-wow-duration="1s" data-wow-delay="0.3s" data-bs-toggle="modal" data-bs-target="#formModal">
                     <div class="pricing-block text-center">
                         <div class="price-tag">
                             <h1 style="margin: -20px;">INR 5000</h1>
-                            <h4>Regular</h4>
-                            <h6>(From 21 Nov' 2024)</h6>
-                            <div class="price-tag-desc" style="background:#CD7F32 !important; color: #000 !important;">
-                                <h5>STUDENT</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5 justify-content-center" style="margin-bottom: 2rem!important;">
-                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="pricing-block text-center">
-                        <div class="price-tag">
-                            <h1 style="margin: -20px;">INR 5000</h1>
-                            <h4>Early Bird</h4>
-                            <h6>(Valid till 20 Nov'24)</h6>
-                            <div class="price-tag-desc" style="background:silver !important; color: #000 !important;">
-                                <h5>ACADEMIA (KLEFV)</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="pricing-block text-center">
-                        <div class="price-tag">
-                            <h1 style="margin: -20px;">INR 6000</h1>
-                            <h4>Regular</h4>
-                            <h6>(From 21 Nov' 2024)</h6>
-                            <div class="price-tag-desc" style="background:silver !important; color: #000 !important;">
-                                <h5>ACADEMIA (KLEFV)</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="pricing-block text-center">
-                        <div class="price-tag">
-                            <h1 style="margin: -20px;">INR 8000</h1>
                             <h4>Early Bird</h4>
                             <h6>(Valid till 20 Nov'24) </h6>
-                            <div class="price-tag-desc" style="background:silver !important; color: #000 !important;">
+                            <div class="price-tag-desc" style="background: silver !important; color: #000 !important;">
                                 <h5>ACADEMIA</h5>
                             </div>
                         </div>
@@ -1725,13 +1672,13 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
+                    data-wow-duration="1s" data-wow-delay="0.3s" data-bs-toggle="modal" data-bs-target="#formModal">
                     <div class="pricing-block text-center">
                         <div class="price-tag">
-                            <h1 style="margin: -20px;">INR 9000</h1>
-                            <h4>Early Bird</h4>
+                            <h1 style="margin: -20px;">INR 6000</h1>
+                            <h4>Regular</h4>
                             <h6>(From 21 Nov' 2024)</h6>
-                            <div class="price-tag-desc" style="background:silver !important; color: #000 !important;">
+                            <div class="price-tag-desc" style="background: silver !important; color: #000 !important;">
                                 <h5>ACADEMIA</h5>
                             </div>
                         </div>
@@ -1741,10 +1688,10 @@
 
             <div class="row mb-5 justify-content-center" style="margin-bottom: 4rem!important;">
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
+                    data-wow-duration="1s" data-wow-delay="0.3s" data-bs-toggle="modal" data-bs-target="#formModal">
                     <div class="pricing-block text-center">
                         <div class="price-tag">
-                            <h1 style="margin: -20px;">INR 9000</h1>
+                            <h1 style="margin: -20px;">INR 7000</h1>
                             <h4>Early Bird</h4>
                             <h6>(Valid till 20 Nov'24) </h6>
                             <div class="price-tag-desc" style="background:gold !important; color: #000 !important;">
@@ -1755,10 +1702,10 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s">
+                    data-wow-duration="1s" data-wow-delay="0.3s" data-bs-toggle="modal" data-bs-target="#formModal">
                     <div class="pricing-block text-center">
                         <div class="price-tag">
-                            <h1 style="margin: -20px;">INR 10000</h1>
+                            <h1 style="margin: -20px;">INR 8000</h1>
                             <h4>Regular</h4>
                             <h6>(From 21 Nov' 2024)</h6>
                             <div class="price-tag-desc" style="background:gold !important; color: #000 !important;">
@@ -1768,6 +1715,53 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pricing-heading text-center mt-5 mb-5 wow animated fadeInDown" data-wow-duration="1s"
+                        data-wow-delay="0.5s" style="margin-top: 0rem !important;">
+                        <h3 class="mb-5">Add-on (Accommodation)</h3>
+                        <p class="mb-5" style="margin-bottom: 5rem !important;">Be in the campus. Expericence it full.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row mb-5 justify-content-center" style="margin-bottom: 2rem!important;">
+                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
+                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#formModal">
+                    <div class="pricing-block text-center">
+                        <div class="price-tag">
+                            <h1 style="margin: -20px;">INR 700</h1>
+                            <h4>Per day per attendee</h4>
+                            <h6>-Based on availability-</h6>
+                            <div class="price-tag-desc" style="background:#CD7F32 !important; color: #000 !important;">
+                                <h5>STUDENT</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
+                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#formModal">
+                    <div class="pricing-block text-center">
+                        <div class="price-tag">
+                            <h1 style="margin: -20px;">INR 1500</h1>
+                            <h4>Per day per attendee</h4>
+                            <h6>-Based on availability-</h6>
+                            <div class="price-tag-desc" style="background: linear-gradient(to right, silver, gold) !important; color: #000 !important;">
+                                <h5>Professionals</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+
 
 
             <div class="row mb-5 justify-content-center" style="margin-bottom: 4rem!important;">
@@ -1779,9 +1773,7 @@
                                 data-bs-toggle="modal" data-bs-target="#formModal">Click Here To Register</button>
                     </div>
                 </div>
-            </div>
 
-            <div class="row mb-5 justify-content-center" style="margin-bottom: 4rem!important;">
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
                     data-wow-duration="1s" data-wow-delay="0.3s">
                         <div class="pricing-btn">
@@ -1790,6 +1782,7 @@
                                 data-bs-toggle="modal" data-bs-target="#PriceCalculatorModal">Calculate the cost</button>
                     </div>
                 </div>
+
             </div>
 
 
