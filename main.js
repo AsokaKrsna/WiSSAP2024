@@ -634,3 +634,68 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+function checkAllPricingBlocks() {
+    const currentDate = new Date();
+    
+    // Select all pricing blocks
+    const pricingBlocks = document.querySelectorAll('.pricing-block');
+    
+    pricingBlocks.forEach(block => {
+        const validFrom = new Date(block.dataset.validFrom);
+        const validUntil = new Date(block.dataset.validUntil);
+        validUntil.setHours(23, 59, 59);
+        
+        // Get the parent column
+        const parentColumn = block.closest('.col-sm-12');
+        
+        if (currentDate >= validFrom && currentDate <= validUntil) {
+            block.classList.remove('inactive');
+            block.classList.add('active');
+            // Enable clicks on parent column
+            if (parentColumn) {
+                parentColumn.classList.remove('inactive-container');
+                parentColumn.classList.add('active-container');
+            }
+        } else {
+            block.classList.remove('active');
+            block.classList.add('inactive');
+            // Disable clicks on parent column
+            if (parentColumn) {
+                parentColumn.classList.remove('active-container');
+                parentColumn.classList.add('inactive-container');
+            }
+        }
+        
+        if (block.classList.contains('active')) {
+            updateBlockCountdown(block, validUntil);
+        }
+    });
+}
+
+function updateBlockCountdown(block, endDate) {
+    const now = new Date();
+    const timeLeft = endDate - now;
+    
+    if (timeLeft > 0) {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        
+        const h6Element = block.querySelector('h6');
+        if (h6Element) {
+            // Store the original text in a data attribute if not already stored
+            if (!h6Element.dataset.originalText) {
+                h6Element.dataset.originalText = h6Element.textContent.split('-')[0].trim();
+            }
+            
+            // Use the stored original text
+            h6Element.innerHTML = `${h6Element.dataset.originalText}<br>${days}d ${hours}h left`;
+        }
+    }
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', function() {
+    checkAllPricingBlocks();
+    // Check every minute
+    setInterval(checkAllPricingBlocks, 60000);
+});
