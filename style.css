@@ -80,7 +80,7 @@ body {
 
 .custom-nav {
     background: transparent;
-    padding: 20.3px;
+    padding: 15px;
     font-family: var(--primaryFont);
     font-weight: 600;
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .navbar-brand img {
-    max-height: 50px; /* Adjust the height as needed */
+    max-height: 40px; /* Adjust the height as needed */
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -118,7 +118,8 @@ body {
 }
 
 .custom-nav-item {
-    padding: 0px 8px;
+    padding: 0px 5px;
+    padding-bottom: 0px;
 }
 
 .custom-nav-link {
@@ -1919,7 +1920,7 @@ header {
 }
 
 .pricing-block.inactive::before {
-    content: "Not Available";
+    content: "Not Accessible";
     position: absolute;
     top: 50%;
     left: 50%;
