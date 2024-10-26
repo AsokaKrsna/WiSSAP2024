@@ -100,13 +100,27 @@
                                 <a class="nav-link custom-nav-link" id="SPK" aria-current="page"
                                     href="#speakers">Speakers</a>
                             </li>
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="PRC" aria-current="page"
-                                    href="#pricing">Register</a>
+                            <li class="nav-item dropdown custom-nav-item position-relative">
+                                <a class="nav-link dropdown-toggle custom-nav-link" id="PRC" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Register
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="PRC">
+                                    <li><a class="dropdown-item" href="#pricing">Event Registration</a></li>
+                                    <li><a class="dropdown-item" href="#accomodation">Accommodation</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="SPN" aria-current="page"
-                                    href="#comittee">Committee</a>
+                            
+                            <li class="nav-item dropdown custom-nav-item position-relative">
+                                <a class="nav-link dropdown-toggle custom-nav-link" id="committee" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Committee
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="committee">
+                                    <li><a class="dropdown-item" href="#patron">Patron</a></li>
+                                    <li><a class="dropdown-item" href="#copatron">Co-Patron</a></li>
+                                    <li><a class="dropdown-item" href="#advisorycommittee">Advisory Committee</a></li>
+                                    <li><a class="dropdown-item" href="#convenors">Convenors</a></li>
+                                    <li><a class="dropdown-item" href="#organizers">Organizers</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item custom-nav-item">
                                 <a class="nav-link custom-nav-link" id="SPN" aria-current="page"
@@ -1079,7 +1093,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Thank you for your interest in WiSSAP 2024 (Winter School on Speech and Audio Processing) hosted by KL University. 
+                        <p>Thank you for your interest in WiSSAP 2024 (Winter School on Speech and Audio Processing) hosted by KL University.
                         </p>
                         <h4>Payment Instructions</h4>
                         <ul>
@@ -1105,13 +1119,11 @@
                         </ul>
                         <h4>Terms & Conditions</h4>
                         <ul>
-                            <li>Registration and accomodation fees are non-refundable.</li>
-                            <li>Registration and accomodation is valid for the registered participant only</li>
+                            <li>Registration fees are non-refundable.</li>
+                            <li>Registration is valid for the registered participant only</li>
                             <li>Registration is valid for the entire duration of the event</li>
-                            <li>Registration fees are non-refundable
                             <li>Payment verification may take up to 24-48 hours</li>
-                            <li>The organizing committee reserves the right to modify the program schedule</li>
-                            <li>Certificates will be issued only to participants who attend all sessions</li>
+                            <li>Certificates will be issued only to registered participants</li>
                             <li>Participants are responsible for their own travel arrangements</li>
                         </ul>
                         <h4>Need Help?</h4>
@@ -1121,15 +1133,137 @@
                             <li>General inquiries: [Email/Phone]</li>
                         </ul>
                         <p><b>Please note -</b>Your registration will remain pending until payment verification is complete. All communications regarding your registration will be sent to your registered email address.</p>
-                        <p><b>You agree to our terms and conditions by registering to the event.</b></p>
                     </div>
                     <div class="modal-header position-relative py-4" style="margin: 0%;">
-                        <a href="#tally-open=wkR6Dr&tally-layout=modal&tally-width=700&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=10000" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true" style="background-color: #1bce7c; align-items: center;"><h4 style="color: #fff; font-weight: 800; margin: 0%; padding: 0%;">Proceed with registration</h4></a>
+                        <a href="#tally-open=wvxBBl&tally-layout=modal&tally-width=699&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=10000" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true" style="background-color: #1bce7c; align-items: center;"><h4 style="color: #fff; font-weight: 800; margin: 0%; padding: 0%;">Proceed with registration</h4></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- MODAL FOR FORM END   -->
+        <!-- MODAL FOR  early bird FORM END   -->
+
+
+
+        <div class="modal fade" id="regularformModal" tabindex="-1" aria-labelledby="FormModalLabel"
+            aria-hidden="true" style="z-index: 99999999;">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content rounded-0" style="border:2px solid #1bce7c;">
+                    <div class="modal-header position-relative py-4">
+                        <h5 class="modal-title text-center w-100 text-uppercase position-absolute"
+                            id="FormModalLabel"
+                            style="font-size:15px;color:#1bce7c;font-weight:700;letter-spacing: 0.2em;">
+                            Important Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                            style="z-index:2500;">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for your interest in WiSSAP 2024 (Winter School on Speech and Audio Processing) hosted by KL University.
+                        </p>
+                        <h4>Payment Instructions</h4>
+                        <ul>
+                            <li>Registration will be confirmed only after payment verification</li>
+                            <li>Please complete the payment before proceeding with the registration form</li>
+                            <li>Kindly save your payment receipt/screenshot as you will need to upload it during registration</li>
+                        </ul>
+                        <h4>Bank Details</h4>
+                            <ul>
+                                <li><b>Account Name:</b> K L E F </li>
+                                <li><b>Account Number:</b>	62162871052</li>
+                                <li><b>Bank Name:</b> State Bank of India</li>
+                                <li><b>Branch Name:</b> Vaddeswaram, Guntur Dist. Andhra Pradesh, India.</li>
+                                <li><b>IFSC CODE:</b> SBIN0021361</li>
+                                <li><b>SWIFT CODE:</b> SBININBB181</li>
+                            </ul>
+                        <h4>Accommodation Details</h4>
+                        <ul>
+                            <li>Accommodation is not included in the registration fee</li>
+                            <li>On-campus accommodation is available on a daily basis</li>
+                            <li>Rates and availability can be found in the accommodation section of the website</li>
+                            <li>Early booking is recommended due to limited availability</li>
+                        </ul>
+                        <h4>Terms & Conditions</h4>
+                        <ul>
+                            <li>Registration fees are non-refundable.</li>
+                            <li>Registration is valid for the registered participant only</li>
+                            <li>Registration is valid for the entire duration of the event</li>
+                            <li>Payment verification may take up to 24-48 hours</li>
+                            <li>Certificates will be issued only to registered participants</li>
+                            <li>Participants are responsible for their own travel arrangements</li>
+                        </ul>
+                        <h4>Need Help?</h4>
+                        <ul>
+                            <li>For payment-related queries: [Email/Phone]</li>
+                            <li>For accommodation assistance: [Email/Phone]</li>
+                            <li>General inquiries: [Email/Phone]</li>
+                        </ul>
+                        <p><b>Please note -</b>Your registration will remain pending until payment verification is complete. All communications regarding your registration will be sent to your registered email address.</p>
+                    </div>
+                    <div class="modal-header position-relative py-4" style="margin: 0%;">
+                        <a href="#tally-open=n9J1l5&tally-layout=modal&tally-width=700&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=9000" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true" style="background-color: #1bce7c; align-items: center;"><h4 style="color: #fff; font-weight: 800; margin: 0%; padding: 0%;">Proceed with registration</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="accommodationformmodal" tabindex="-1" aria-labelledby="FormModalLabel"
+            aria-hidden="true" style="z-index: 99999999;">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content rounded-0" style="border:2px solid #1bce7c;">
+                    <div class="modal-header position-relative py-4">
+                        <h5 class="modal-title text-center w-100 text-uppercase position-absolute"
+                            id="FormModalLabel"
+                            style="font-size:15px;color:#1bce7c;font-weight:700;letter-spacing: 0.2em;">
+                            Important Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                            style="z-index:2500;">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Welcome to the vibrant campus of KL University for WiSSAP 2024 (Winter School on Speech and Audio Processing). We are excited to have you with us for this event. On-campus accommodation will allow you to experience the event at its fullest.
+                        </p>
+                        <h4>Payment Instructions</h4>
+                        <ul>
+                            <li>Accommodation will be confirmed only after payment verification</li>
+                            <li>Please complete the payment before proceeding with the accommodation form</li>
+                            <li>Kindly save your payment receipt/screenshot as you will need to upload it during registration</li>
+                        </ul>
+                        <h4>Bank Details</h4>
+                            <ul>
+                                <li><b>Account Name:</b> K L E F </li>
+                                <li><b>Account Number:</b>	62162871052</li>
+                                <li><b>Bank Name:</b> State Bank of India</li>
+                                <li><b>Branch Name:</b> Vaddeswaram, Guntur Dist. Andhra Pradesh, India.</li>
+                                <li><b>IFSC CODE:</b> SBIN0021361</li>
+                                <li><b>SWIFT CODE:</b> SBININBB181</li>
+                            </ul>
+                        <h4>Accommodation Details</h4>
+                        <ul>
+                            <li>Fees are mentioned on per att per day basis.</li>
+                            <li>Student accomodation is explicitly for students only.</li>
+                            <li>Academia and non-academia participants must opt for Professionals accommodation.</li>
+                            <li>Early booking is recommended due to limited availability</li>
+                        </ul>
+                        <h4>Terms & Conditions</h4>
+                        <ul>
+                            <li>Accommodation fees are non-refundable.</li>
+                            <li>Accommodation is valid for the registered participant only</li>
+                            <li>Payment verification may take up to 24-48 hours</li>
+                        </ul>
+                        <h4>Need Help?</h4>
+                        <ul>
+                            <li>For payment-related queries: [Email/Phone]</li>
+                            <li>For accommodation assistance: [Email/Phone]</li>
+                            <li>General inquiries: [Email/Phone]</li>
+                        </ul>
+                        <p><b>Please note -</b>Your registration will remain pending until payment verification is complete. All communications regarding your registration will be sent to your registered email address.</p>
+                    </div>
+                    <div class="modal-header position-relative py-4" style="margin: 0%;">
+                        <a href="#tally-open=mDv15N&tally-layout=modal&tally-width=700&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=9000" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true" style="background-color: #1bce7c; align-items: center;"><h4 style="color: #fff; font-weight: 800; margin: 0%; padding: 0%;">Proceed with registration</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- MODAL FOR Price Calculator Starts -->
@@ -1287,7 +1421,7 @@
 
 
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#formModal">
+                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#regularformModal">
                     <div class="pricing-block text-center" 
                     data-valid-from="2024-11-21" 
                     data-valid-until="2024-12-10" 
@@ -1312,7 +1446,7 @@
 
 
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s" data-bs-toggle="modal" data-bs-target="#formModal">
+                    data-wow-duration="1s" data-wow-delay="0.3s" data-bs-toggle="modal" data-bs-target="#regularformModal">
                     <div class="pricing-block text-center" 
                     data-valid-from="2024-11-21" 
                     data-valid-until="2024-12-10" 
@@ -1337,7 +1471,7 @@
                 
 
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s" data-bs-toggle="modal" data-bs-target="#formModal">
+                    data-wow-duration="1s" data-wow-delay="0.3s" data-bs-toggle="modal" data-bs-target="#regularformModal">
                     <div class="pricing-block text-center"
                     data-valid-from="2024-11-21" 
                     data-valid-until="2024-12-10" 
@@ -1361,7 +1495,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="accomodation">
                 <div class="col-md-12">
                     <div class="pricing-heading text-center mt-5 mb-5 wow animated fadeInDown" data-wow-duration="1s"
                         data-wow-delay="0.5s" style="margin-top: 0rem !important;">
@@ -1376,7 +1510,7 @@
 
             <div class="row mb-5 justify-content-center" style="margin-bottom: 2rem!important;">
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#formModal">
+                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#accommodationformmodal">
                     <div class="pricing-block text-center"
                     data-valid-from="2024-07-21" 
                     data-valid-until="2024-12-10" 
@@ -1400,7 +1534,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 wow animated fadeInRight"
-                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#formModal">
+                    data-wow-duration="1s" data-wow-delay="0.3s"  data-bs-toggle="modal" data-bs-target="#accommodationformmodal">
                     <div class="pricing-block text-center"
                     data-valid-from="2024-07-21" 
                     data-valid-until="2024-12-10" 
@@ -1590,7 +1724,7 @@
 
 <!--Section Committee starts here-->
     <section class="pricing container-fluid position-relative d-flex align-items-center justify-content-center"
-        id="comittee" style="background-color: #0F1726 !important;">
+        id="patron" style="background-color: #0F1726 !important;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -1695,7 +1829,7 @@
     
 
     <section class="pricing container-fluid position-relative d-flex align-items-center justify-content-center"
-        id="pricing" style="background-color: #0F1726 !important;">
+        id="copatron" style="background-color: #0F1726 !important;">
         <div class="container">
                     <div class="row mb-5 justify-content-center" style="margin-top: -60px;">
                         <!-- Subheading for Co-Patron -->
@@ -1894,7 +2028,7 @@
 
 
     <section class="pricing container-fluid position-relative d-flex align-items-center justify-content-center"
-        id="pricing" style="background-color: #0F1726 !important;">
+        id="advisorycommittee" style="background-color: #0F1726 !important;">
         <div class="container">
             <div class="row mb-5 justify-content-center" style="margin-top: -60px;">
                 
@@ -2015,7 +2149,7 @@
 
 
     <section class="pricing container-fluid position-relative d-flex align-items-center justify-content-center"
-        id="pricing" style="background-color: #0F1726 !important;">
+        id="convenors" style="background-color: #0F1726 !important;">
         <div class="container">
             <div class="row mb-5 justify-content-center" style="margin-top: -60px;">
                 
@@ -2132,7 +2266,7 @@
 
 
     <section class="pricing container-fluid position-relative d-flex align-items-center justify-content-center"
-    id="pricing" style="background-color: #0F1726 !important;">
+    id="organizers" style="background-color: #0F1726 !important;">
     <div class="container">
                 <div class="row mb-5 justify-content-center" style="margin-top: -60px;">
                     <div class="col-12 text-center mb-4">
