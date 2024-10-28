@@ -73,7 +73,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 5,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsiveClass: true,
     responsive: {
@@ -96,7 +96,7 @@ $('.custom-carousel').owlCarousel({
     loop: true,
     margin: 5,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsiveClass: true,
     responsive: {
@@ -530,78 +530,172 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentDateElement = document.getElementById('currentDate');
     const registrationTypeElement = document.getElementById('registrationType');
     const accommodationElement = document.getElementById('accommodation');
-    const accommodationOptions = document.getElementById('accommodationOptions');
+    const accommodationDates = document.getElementById('accommodationDates');
     const accommodationTypeElement = document.getElementById('accommodationType');
+    const checkInDateElement = document.getElementById('checkInDate');
+    const checkOutDateElement = document.getElementById('checkOutDate');
+    const numberOfDaysElement = document.getElementById('numberOfDays');
     const resultElement = document.getElementById('result');
     const earlyBirdMessageElement = document.getElementById('earlyBirdMessage');
 
     // Prices
-    const earlyBirdDate = new Date('2024-11-20'); // Early bird deadline
-    const earlyBirdPrices = { student: 100, academia: 150, 'non-academia': 200 };
-    const regularPrices = { student: 150, academia: 200, 'non-academia': 250 };
-    const studentAccommodation = ['Dorm - ₹50', 'Shared Room - ₹75'];
-    const nonStudentAccommodation = ['Hotel - ₹150', 'Private Room - ₹200'];
+    const earlyBirdDate = new Date('2024-11-20');
+    const earlyBirdPrices = { student: 2000, academia: 5000, 'non-academia': 7000 };
+    const regularPrices = { student: 3000, academia: 6000, 'non-academia': 8000 };
+    const accommodationPrices = {
+        student: 700,  // per day
+        professional: 1500  // per day for academia and non-academia
+    };
 
-    // Get the current date based on the user's timezone
+    // Get the current date
     const currentDate = new Date();
     currentDateElement.innerText = currentDate.toDateString();
 
-    // Show the Early Bird or Missed message immediately when the page loads
+    // Show Early Bird message
     if (currentDate <= earlyBirdDate) {
         earlyBirdMessageElement.innerHTML = "<h4 style='color: green; text-style: justified;'>You are eligible for the Early Bird discount and it will be automatically applied while calculating price</h4>";
     } else {
         earlyBirdMessageElement.innerHTML = "<h4 style='color: red; text-style: justified;'>Ahaah! You missed the Early Bird Discount</h4>";
     }
 
-    // Show accommodation options based on the registration type
-    registrationTypeElement.addEventListener('change', function() {
-        if (accommodationElement.value === 'yes') {
-            updateAccommodationOptions();
+    // Update accommodation type based on registration type
+    function updateAccommodationType() {
+        const registrationType = registrationTypeElement.value;
+        if (registrationType === 'student') {
+            accommodationTypeElement.value = 'Student Accommodation (₹700/day)';
+        } else {
+            accommodationTypeElement.value = 'Professional Accommodation (₹1500/day)';
         }
-    });
+    }
 
-    // Show/hide accommodation options based on the "Yes" or "No" value
+    // Show/hide accommodation options
     accommodationElement.addEventListener('change', function() {
         if (accommodationElement.value === 'yes') {
-            updateAccommodationOptions();
-            accommodationOptions.style.display = 'block';
+            accommodationDates.style.display = 'block';
+            updateAccommodationType();
         } else {
-            accommodationOptions.style.display = 'none';
+            accommodationDates.style.display = 'none';
         }
     });
 
-    function updateAccommodationOptions() {
-        const registrationType = registrationTypeElement.value;
-        let options = [];
-
-        if (registrationType === 'student') {
-            options = studentAccommodation;
-        } else {
-            options = nonStudentAccommodation;
+    registrationTypeElement.addEventListener('change', function() {
+        if (accommodationElement.value === 'yes') {
+            updateAccommodationType();
         }
+    });
 
-        accommodationTypeElement.innerHTML = '';
-        options.forEach(option => {
-            const opt = document.createElement('option');
-            opt.value = option;
-            opt.innerText = option;
-            accommodationTypeElement.appendChild(opt);
-        });
+    // Calculate number of days between check-in and check-out
+    function calculateDays() {
+        const checkIn = new Date(checkInDateElement.value);
+        const checkOut = new Date(checkOutDateElement.value);
+        
+        if (checkIn && checkOut && checkOut >= checkIn) {
+            const diffTime = Math.abs(checkOut - checkIn);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            numberOfDaysElement.textContent = diffDays;
+            return diffDays;
+        }
+        numberOfDaysElement.textContent = '0';
+        return 0;
     }
+
+    checkInDateElement.addEventListener('change', calculateDays);
+    checkOutDateElement.addEventListener('change', calculateDays);
 
     // Calculate the total price
     window.calculatePrice = function() {
         const registrationType = registrationTypeElement.value;
         const prices = currentDate <= earlyBirdDate ? earlyBirdPrices : regularPrices;
-        let total = prices[registrationType];
+        let registrationCost = prices[registrationType];
+        let accommodationCost = 0;
+        let totalCost = registrationCost;
 
         if (accommodationElement.value === 'yes') {
-            const accommodationCost = accommodationTypeElement.value.split(' - ₹')[1];
-            total += parseFloat(accommodationCost);
+            const days = calculateDays();
+            if (days > 0) {
+                const dailyRate = registrationType === 'student' ? 
+                    accommodationPrices.student : 
+                    accommodationPrices.professional;
+                accommodationCost = dailyRate * days;
+                totalCost += accommodationCost;
+            }
         }
 
-        resultElement.innerHTML = `<h2>Total Price: ₹${total}</h2>`;
+        // Display detailed breakdown
+        resultElement.innerHTML = `
+            <div class="price-breakdown">
+                <div>Registration Fee: ₹${registrationCost}</div>
+                ${accommodationElement.value === 'yes' ? 
+                    `<div>Accommodation Cost: ₹${accommodationCost} (${calculateDays()} days)</div>` : 
+                    ''}
+                <div class="total-price">Total Cost: ₹${totalCost}</div>
+            </div>`;
     }
 });
 
 
+function checkAllPricingBlocks() {
+    const currentDate = new Date();
+    
+    // Select all pricing blocks
+    const pricingBlocks = document.querySelectorAll('.pricing-block');
+    
+    pricingBlocks.forEach(block => {
+        const validFrom = new Date(block.dataset.validFrom);
+        const validUntil = new Date(block.dataset.validUntil);
+        validUntil.setHours(23, 59, 59);
+        
+        // Get the parent column
+        const parentColumn = block.closest('.col-sm-12');
+        
+        if (currentDate >= validFrom && currentDate <= validUntil) {
+            block.classList.remove('inactive');
+            block.classList.add('active');
+            // Enable clicks on parent column
+            if (parentColumn) {
+                parentColumn.classList.remove('inactive-container');
+                parentColumn.classList.add('active-container');
+            }
+        } else {
+            block.classList.remove('active');
+            block.classList.add('inactive');
+            // Disable clicks on parent column
+            if (parentColumn) {
+                parentColumn.classList.remove('active-container');
+                parentColumn.classList.add('inactive-container');
+            }
+        }
+        
+        if (block.classList.contains('active')) {
+            updateBlockCountdown(block, validUntil);
+        }
+    });
+}
+
+function updateBlockCountdown(block, endDate) {
+    const now = new Date();
+    const timeLeft = endDate - now;
+    
+    if (timeLeft > 0) {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        
+        const h6Element = block.querySelector('h6');
+        if (h6Element) {
+            // Store the original text in a data attribute if not already stored
+            if (!h6Element.dataset.originalText) {
+                h6Element.dataset.originalText = h6Element.textContent.split('-')[0].trim();
+            }
+            
+            // Use the stored original text
+            h6Element.innerHTML = `${h6Element.dataset.originalText}<br>${days}d ${hours}h left`;
+        }
+    }
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', function() {
+    checkAllPricingBlocks();
+    // Check every minute
+    setInterval(checkAllPricingBlocks, 60000);
+});
