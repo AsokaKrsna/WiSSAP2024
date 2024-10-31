@@ -118,28 +118,42 @@ $('.custom-carousel').owlCarousel({
 
 const scheduleData = {
     day1: {
-        date: "DECEMBER 9, 2024 (Monday) | Tutorial",
+        date: "DECEMBER 9, 2024 (Monday) | Multilingual Speech Processing",
         events: [
             {
-                time: "9:00 a.m - 10:30 a.m",
-                title: "Tutorial 1 (Part 1) - Advances in Deep Learning Models",
-                speaker: "<strong>C. Chandra Sekhar</strong> <br>SVL Lab and SMV Lab <br>Department of Computer Science and Engineering <br>Indian Institute pf Technology (IIT) Madras, Chennai, India",
-                venue: "Peacock Hall",
-                description: "Will be updated soon"
+                time: "08:00 a.m - 09:00 a.m",
+                title: "Registration",
+                speaker: "",
+                venue: "C block lobby",
+                description: "Please carry your registration confirmation email and a valid ID proof for registration."
             },
             {
-                time: "10:30 a.m - 11:00 a.m",
-                title: "TEA BREAK",
+                time: "09:00 a.m - 10:00 a.m",
+                title: "Inugral Function",
+                speaker: "",
+                venue: "Peacock Hall",
+                description: "Get ready to be inspired by our esteemed speakers and guests."
+            },
+            {
+                time: "10:00 a.m - 10:30 a.m",
+                title: "Refreshment Break",
                 speaker: "",
                 venue: "Open Air Theater",
-                description: "N/A"
+                description: "Sbaks and beverages will be served. Time to network and recharge!"
             },
             {
-                time: "11:00 a.m - 12:30 p.m",
-                title: "Tutorial 1 (Part 2) - Advances in Deep Learning Models",
-                speaker: "<strong>C. Chandra Sekhar</strong> <br>SVL Lab and SMV Lab <br>Department of Computer Science and Engineering <br>Indian Institute pf Technology (IIT) Madras, Chennai, India",
+                time: "10:30 a.m - 11:30 a.m",
+                title: "Invited Talk 1 - Building code switched/code mixed speech synthesis in Indian Languages.",
+                speaker: "<strong>Dr. Hema A Murthy</strong>",
                 venue: "Peacock Hall",
-                description: "Will be updated soon"
+                description: "Code-switching is a prevalent linguistic phenomenon in multilingual societies, where speakers seamlessly alternate between languages within a single conversation. This talk explores cutting-edge speech synthesis techniques that capture the nuanced linguistic complexities of code-mixed speech in Indian languages, addressing the intricate challenges of prosody, pronunciation, and contextual understanding required to generate natural and contextually appropriate multilingual synthetic speech."
+            },
+            {
+                time: "11:30 a.m - 12:30 p.m",
+                title: "Invited Talk 2 - Advances in Deep Learning",
+                speaker: "<strong>Dr. C. Chandra Sekhar</strong>",
+                venue: "Peacock Hall",
+                description: "Deep learning has revolutionized artificial intelligence by enabling machines to learn complex patterns and representations from vast amounts of data. This talk explores the latest breakthroughs in neural network architectures, training techniques, and transformative applications across domains such as computer vision, natural language processing, and predictive modeling, highlighting how these advances are pushing the boundaries of machine intelligence and solving increasingly sophisticated computational challenges."
             },
             {
                 time: "12:30 p.m - 02:00 p.m",
@@ -150,24 +164,31 @@ const scheduleData = {
             },
             {
                 time: "02:00 p.m - 03:30 p.m",
-                title: "Tutorial 2 (Part 1) - Large Language Models",
-                speaker: "<strong>Name </strong> <br> <br> Amrita University<br>",
+                title: "Invited Talk 3 - Title to be updated",
+                speaker: "<strong>Dr. K Sri Rama Murthy</strong>",
                 venue: "Peacock Hall",
                 description: "Will be updated soon"
             },
             {
-                time: "03:30 p.m - 04:00 p.m",
+                time: "03:30 p.m - 03:30 p.m",
                 title: "Refreshment Break",
                 speaker: "",
                 venue: "Open Air Theater",
                 description: "N/A"
             },
             {
-                time: "04:00 p.m - 05:00 p.m",
-                title: "Tutorial 2 (Part 2) - Large Language Models",
-                speaker: "<strong>Name </strong> <br> <br> Amrita University<br>",
+                time: "03:30 p.m - 05:00 p.m",
+                title: "Industry Perspective Talk 1 - Title to be updated",
+                speaker: "<strong>Vikram C M</strong>",
                 venue: "Peacock Hall",
                 description: "Will be updated soon"
+            },
+            {
+                time: "05:00 p.m - 06:30 p.m",
+                title: "Networking Party",
+                speaker: "",
+                venue: "Open Air Theater",
+                description: "N/A"
             },
             // Add more events for Day 1 as needed
         ]
@@ -177,29 +198,29 @@ const scheduleData = {
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",
-                title: "Inaugural Function and Registration",
-                speaker: "",
+                title: "Invited Talk 4 - Multi-Lingual Audio Deepfake Detection Corpus",
+                speaker: "<strong>Dr. Hemant A Patil</strong>",
                 venue: "Peacock Hall",
-                description: "N/A"
+                description: "The proliferation of advanced audio synthesis technologies has raised critical concerns about misinformation and identity fraud. This talk delves into the development of a comprehensive multi-lingual audio deepfake detection corpus, examining innovative methodological approaches for creating robust datasets that capture the nuanced linguistic and acoustic variations across different languages, while addressing the technical challenges of identifying synthesized speech artifacts in an increasingly complex digital landscape."
             },
             {
-                time: "10:00 a.m - 10:30 a.m",
-                title: "Meet-and-Greet",
+                time: "10:00 a.m - 11:00 a.m",
+                title: "Industry Perspective Talk 2 - Development of Text to Speech Synthesis System for Santhali - A Low Resource Language",
+                speaker: "<strong>Dr. Pranaw Kumar</strong>",
+                venue: "Peacock Hall",
+                description: "Santhali, an indigenous language with limited digital resources, presents unique challenges for speech technology development. This talk explores the intricate process of creating a text-to-speech synthesis system for Santhali, addressing linguistic complexities, resource scarcity, and technological innovations required to preserve and promote this vital language through advanced computational linguistics and speech synthesis techniques, ultimately bridging the technological accessibility gap for marginalized linguistic communities."
+            },
+            {
+                time: "11:00 a.m - 11:30 a.m",
+                title: "Meet and Greet",
                 speaker: "",
                 venue: "Open Air Theater",
-                description: "Snacks and beverages will be served"
-            },
-            {
-                time: "10:30 a.m - 11:30 a.m",
-                title: "Invited Talk 1",
-                speaker: "<strong>S Umesh</strong> <br>SPRING Lab <br> Department of Electrical Engineering <br>Indian Institute of Technology (IIT) Madras, Chennai, India",
-                venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "Snacks and beverages will be served. Time to network and recharge!"
             },
             {
                 time: "11:30 a.m - 12:30 p.m",
-                title: "Invited Talk 2",
-                speaker: "<strong>Sriram Ganapathy</strong> <br>Department of Electrical Engineering <br>Indian Institute of Science (IISc), Bangalore, Karnataka, India",
+                title: "Invited Talk 5 - Title to be updated",
+                speaker: "<strong>Dr. S Umesh</strong>",
                 venue: "Peacock Hall",
                 description: "Details will be updated soon"
             },
@@ -212,8 +233,8 @@ const scheduleData = {
             },
             {
                 time: "02:00 p.m - 03:00 p.m",
-                title: "Invited Talk 3",
-                speaker: "<strong>Hemant A Patil</strong> <br>Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT),",
+                title: "Invited Talk 6 - Title to be updated",
+                speaker: "<strong>Dileep A D</strong>",
                 venue: "Peacock Hall",
                 description: "Details will be updated soon"
             },
@@ -222,14 +243,14 @@ const scheduleData = {
                 title: "Snack Interval",
                 speaker: "",
                 venue: "Open Air Theater",
-                description: "N/A"
+                description: "Its time to recharge and network with other participants."
             },
             {
                 time: "03:30 p.m - 05:00 p.m",
-                title: "Industry Perspective Talk 1",
-                speaker: "<strong> Debamalya Chajrabarty </strong> <br>Senior Applied Scientirst, Amazon AGI, India",
+                title: "Industry Perspective Talk 3 - Attentive Multilingual Speech Encoder for Zero-Prior ASR",
+                speaker: "<strong>Dr. Debamalya Chajrabarty </strong>",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "Automatic Speech Recognition (ASR) for languages with minimal training data poses significant technological challenges. This talk presents an innovative multilingual speech encoder that leverages advanced attention mechanisms to enable zero-prior learning, exploring how sophisticated neural network architectures can effectively recognize and transcribe speech across diverse linguistic contexts with minimal initial training resources, thereby expanding the frontiers of language technology and accessibility."
             },
             {
                 time: "05:00 p.m - 06:30 p.m",
@@ -247,17 +268,17 @@ const scheduleData = {
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",
-                title: "Invited Talk 4",
-                speaker: "<strong>Hema A Murty</strong> <br>Speech, Music and Vision Lab <br>Department of Computer Science and Engineering <br>Indian Institute of Technology (IIT) Madras, Chennai, India",
+                title: "Invited Talk 7 - Are Indic languages  prosodically different?",
+                speaker: "<strong>Dr. T Nagarajan</strong>",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "Prosody, the rhythmic and tonal patterns of speech, varies significantly across Indian language families, revealing complex linguistic and cultural nuances. This talk critically examines the distinctive prosodic characteristics of Indic languages, exploring their unique acoustic features, intonational structures, and rhythmic variations that challenge traditional linguistic assumptions and provide deep insights into the rich phonetic landscape of the Indian subcontinent's diverse linguistic heritage."
             },
             {
                 time: "10:00 a.m - 11:00 a.m",
-                title: "Invited Talk 5",
-                speaker: "<strong>Nagarajan</strong> <br>Computer Science and Engineering <br>Shiv Nadar University, Chennai, India",
+                title: "Invited Talk 8 - Representation Learning For Emotional Artificial Intelligence",
+                speaker: "<strong>Dr. Sriram Ganapathy</strong>",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "Emotional intelligence in artificial systems demands sophisticated understanding of human affect and expression. This talk explores innovative approaches to representation learning that capture the subtle complexities of human emotions, examining how advanced machine learning techniques can encode emotional cues from multiple modalities such as speech, text, and facial expressions. The discussion delves into how these learned representations enable AI systems to better understand, interpret, and respond to human emotional states, advancing the field of affective computing."
             },
             {
                 time: "11:00 a.m - 11:30 a.m",
@@ -268,10 +289,10 @@ const scheduleData = {
             },
             {
                 time: "11:30 a.m - 12:30 p.m",
-                title: "Invited Talk 6",
-                speaker: "<strong>Pranaw Kumar</strong> <br>Scientist 'E' at CDAC Mumbai, Maharashtra, India",
+                title: "Invited Talk 9 - Assistive speech technologies",
+                speaker: "<strong>Dr. P Vijayalakshmi</strong>",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "Speech technology has immense potential to transform the lives of individuals with communication challenges and disabilities. This talk explores groundbreaking developments in assistive speech technologies, from text-to-speech solutions for the speech-impaired to advanced hearing aids and speech recognition systems for the hearing-impaired. The discussion covers how these innovations combine accessibility, usability, and technological advancement to break down communication barriers and enhance quality of life for diverse user groups with varying abilities and needs."
             },
             {
                 time: "12:30 p.m - 02:00 p.m",
@@ -282,31 +303,31 @@ const scheduleData = {
             },
             {
                 time: "02:00 p.m - 03:00 p.m",
-                title: "Invited Talk 7",
-                speaker: "<strong>P Vijayalakshmi</strong> <br>Department of Electronics and Communication Engineering <br> Sri Sivasubramaniya Nadar (SSN) College of Engineering, Kalavakkam, Tamil Nadu, India",
+                title: "Invited Talk 10 - Learning for machines: Insights from acoustic analyses",
+                speaker: "<strong>Priyankoo Sarmah</strong>",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "Scientific exploration of acoustic patterns offers crucial insights into how machines can better understand and process sound. This talk examines the fundamental principles derived from acoustic analyses, revealing how detailed study of sound properties, patterns, and variations can inform machine learning algorithms. The discussion bridges the gap between human auditory perception and machine processing, demonstrating how acoustic insights drive improvements in speech recognition, sound classification, and audio processing systems, ultimately leading to more sophisticated and naturalistic machine learning models."
             },
             {
                 time: "03:00 p.m - 03:30 p.m",
                 title: "Snack Interval",
                 speaker: "",
                 venue: "Open Air Theater",
-                description: "N/A"
+                description: "Have a break and network with other participants."
             },
             {
                 time: "03:30 p.m - 05:00 p.m",
-                title: "Industry Perspective Talk 2",
-                speaker: "<strong> Vikram C M </strong> <br>Senior Chief Enginner <br> Samsunf R&D Institute, Bangalore, Karnataka, India",
+                title: "Industry Perspective Talk 4 - Advancing Text-to-Speech Technology for Indic Languages: Motivation, Architectural Frameworks, and Performance Evaluation",
+                speaker: "<strong>Dr. Sreeram Ganji</strong>",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "The rapidly evolving landscape of text-to-speech (TTS) technology presents unique opportunities and challenges for Indic languages with their rich phonetic diversity and complex linguistic structures. This talk provides a comprehensive overview of the motivations driving Indic language TTS development, exploring innovative architectural frameworks designed to handle script complexities, phonological rules, and prosodic patterns specific to Indian languages. The discussion delves into robust evaluation methodologies and performance metrics that ensure the development of high-quality, natural-sounding speech synthesis systems that cater to India's multilingual digital communication needs."
             },
             {
                 time: "05:00 p.m - 06:30 p.m",
                 title: "Poster Presentation by Research Scholars",
                 speaker: "",
-                venue: "SAC Hall",
-                description: "Details will be updated soon"
+                venue: "SAC Hall, R-Block, Ground Floor",
+                description: "Get insights on the ground breaking research work done by the research scholars in the field of Speech Processing."
             },
             {
                 time: "06:00 p.m onwards",
@@ -324,16 +345,16 @@ const scheduleData = {
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",
-                title: "Invited Talk 8",
-                speaker: "<strong>Priyankoo Sarmah</strong> <br>Department of Humanities and Social Sciences<br>Centre for Linguistic Science and Technology  <br>Indian Institute of Technology Guwahati, Assam, India",
+                title: "Round Table Discussion on The Future Directions of Multilingual Speech Processing.",
+                speaker: "",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "This engaging round table discussion brings together leading experts to explore emerging trends and critical challenges in multilingual speech technology. The session examines key research directions including cross-lingual transfer learning, universal speech representations, low-resource language solutions, and the integration of cultural and linguistic diversity in speech systems. Participants will deliberate on technological roadmaps, ethical considerations, and collaborative approaches needed to advance speech processing technologies that serve the world's linguistic diversity."
             },
             {
                 time: "10:00 a.m - 11:00 a.m",
-                title: "Invited Talk 9",
-                speaker: "<strong>Dileep A D</strong> <br>Department of Computer Science and Engineering<br>Indian Institute of Technology,  Dharwad, Karnataka, India",
-                venue: "Peacock Hall",
+                title: "Presentation by startups",
+                speaker: "",
+                venue: "",
                 description: "Details will be updated soon"
             },
             {
@@ -345,10 +366,10 @@ const scheduleData = {
             },
             {
                 time: "11:30 a.m - 12:30 p.m",
-                title: "Invited Talk 10",
-                speaker: "<strong>K Sri Rama Murthy</strong> <br>Department of Electrical Engineering <br> Indian Institute of Information Technology, Hyedrabad, Telengana, India ",
+                title: "Invited Talk 13 - Processing of speech recorded from stroke patients",
+                speaker: "<strong>Dr. Govind D</strong>",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "This talk examines the complex challenges and methodologies involved in analyzing speech patterns of stroke patients, exploring how advanced signal processing and machine learning techniques can help understand and quantify speech impairments. The discussion covers innovative approaches to processing dysarthric speech, tracking recovery patterns, and developing automated assessment tools, ultimately contributing to better rehabilitation strategies and clinical outcomes for stroke survivors with speech disorders."
             },
             {
                 time: "12:30 p.m - 02:00 p.m",
@@ -359,17 +380,17 @@ const scheduleData = {
             },
             {
                 time: "02:00 p.m - 03:00 p.m",
-                title: "Invited Talk 11",
-                speaker: "<strong>Rakesh U</strong> <br>Department  of  General Medicine <br> AIIMS Mangalagiri, Andhra Pradesh, India",
+                title: "Invited Talk 14 - Insights into Speech Disorders: Bridging Research and Practice",
+                speaker: "<strong>Rakesh U</strong>",
                 venue: "Peacock Hall",
-                description: "Details will be updated soon"
+                description: "This talk explores the vital intersection between clinical research and practical applications in understanding and treating speech disorders. The discussion delves into cutting-edge research findings on various speech pathologies, examining how these insights inform therapeutic interventions, diagnostic tools, and technological solutions. By connecting laboratory discoveries with clinical practice, the talk highlights innovative approaches that enhance assessment accuracy, treatment effectiveness, and quality of life for individuals with speech disorders."
             },
             {
                 time: "03:00 p.m - 04:00 p.m",
-                title: "Industry Perspective Talk 3",
-                speaker: "<strong>Sreeram Ganji</strong>  <br>Senior Data Scientist <br> Relience Jio AICoE, Hyderabad, Telengana, India",
-                venue: "Open Air Theater",
-                description: "N/A"
+                title: "Invited Talk 15 -  Approaches to recording and processing of voice samples of neurological patients",
+                speaker: "<strong>Dr. Rajeev Aravindakshan</strong>",
+                venue: "Peacock Hall",
+                description: "This talk addresses the specialized methodologies and considerations required when collecting and analyzing voice samples from individuals with neurological conditions. The discussion explores crucial aspects of data collection protocols, environmental controls, and advanced signal processing techniques tailored for impaired speech patterns. From managing patient fatigue and varying symptom severity to developing robust analysis frameworks, the talk examines how these approaches contribute to better understanding of neurological conditions and their impact on speech, ultimately advancing both diagnostic capabilities and treatment strategies."
             },
             {
                 time: "04:00 p.m - 04:30 p.m",
@@ -543,8 +564,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const earlyBirdPrices = { student: 2000, academia: 5000, 'non-academia': 7000 };
     const regularPrices = { student: 3000, academia: 6000, 'non-academia': 8000 };
     const accommodationPrices = {
-        student: 700,  // per day
-        professional: 1500  // per day for academia and non-academia
+        student: 750,  // per day
+        professional: 1200  // per day for academia and non-academia
     };
 
     // Get the current date
@@ -562,9 +583,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateAccommodationType() {
         const registrationType = registrationTypeElement.value;
         if (registrationType === 'student') {
-            accommodationTypeElement.value = 'Student Accommodation (₹700/day)';
+            accommodationTypeElement.value = 'Student Accommodation (₹750/day)';
         } else {
-            accommodationTypeElement.value = 'Professional Accommodation (₹1500/day)';
+            accommodationTypeElement.value = 'Professional Accommodation (₹1200/day)';
         }
     }
 

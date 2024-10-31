@@ -591,7 +591,7 @@ header {
 }
 
 .gallery-img {
-    background: url('./Images/Background/gallery.jpg');
+    background: url('./Images/Logos/gallery.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 344.8px;
@@ -619,7 +619,7 @@ header {
 }
 
 .video-img {
-    background: url('./Images/Background/video.jpg');
+    background: url('./Images/Logos/gallery2.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2010,4 +2010,130 @@ header {
 
 .col-sm-12.inactive-container {
     pointer-events: none;
+}
+
+
+/* Custom CSS Properties */
+@property --gap {
+    syntax: '<length>';
+    inherits: true;
+    initial-value: 0;
+}
+@property --angle {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
+
+/* Container styling */
+.guests-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Guest Card */
+.guest-card {
+    text-align: center;
+}
+
+/* Image wrapper */
+.guest-img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Image styling with hover effect */
+.guest-img {
+    --border: 8px;
+    --gap: 12px;
+    --color: #FFD700;
+    
+    width: 250px;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: calc(var(--border) + var(--gap));
+    cursor: pointer;
+
+    /* Extending Color Border Animation */
+    --angle: 90deg;
+    background:
+        radial-gradient(farthest-side, var(--color) 97%, #0000 101%) 85.35% 85.35%,
+        conic-gradient(from calc(180deg - var(--angle) / 2), #0000 var(--angle), var(--color) 0),
+        radial-gradient(farthest-side, var(--color) 97%, #0000 101%) 14.65% 85.35%;
+    background-size: var(--border) var(--border), auto;
+    background-repeat: no-repeat;
+
+    -webkit-mask:
+        radial-gradient(farthest-side,
+        #000 calc(99% - calc(var(--border) + var(--gap))),
+        #0000 calc(100% - calc(var(--border) + var(--gap)))
+        calc(99% - var(--border)),
+        #000 calc(100% - var(--border)));
+    mask:
+        radial-gradient(farthest-side,
+        #000 calc(99% - calc(var(--border) + var(--gap))),
+        #0000 calc(100% - calc(var(--border) + var(--gap)))
+        calc(99% - var(--border)),
+        #000 calc(100% - var(--border)));
+    transition: --angle 0.4s, --gap 0.4s, padding 0.4s;
+}
+
+/* Adjusted hover effect for angle and gap */
+.guest-img-wrapper:hover .guest-img {
+    --angle: 0deg;
+    --gap: 5px;
+    padding: calc(var(--border) + var(--gap));
+}
+
+/* Overlay effect on hover (only on the image itself) */
+.guest-overlay {
+    position: absolute;
+    top: 0;  /* Align the overlay to the top */
+    left: 0; /* Align the overlay to the left */
+    width: 100%; /* Set overlay to fully cover the image */
+    height: 100%; /* Set overlay to fully cover the image */
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    flex-direction: column;
+    z-index: 1; /* Ensure it displays on top of the image */
+}
+
+.guest-img-wrapper:hover .guest-overlay {
+    opacity: 1;
+}
+
+.guest-overlay i {
+    font-size: 1.5em;
+}
+
+.guest-overlay h6 {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+/* Guest Details */
+.guest-details h4 {
+    margin: 10px;
+    color: #1bce7c;
+}
+
+.guest-details p {
+    margin: 0;
+    color: #fff;
+}
+
+.guest-title {
+    color: #FEEDCF;
+    font-weight: normal;
 }
