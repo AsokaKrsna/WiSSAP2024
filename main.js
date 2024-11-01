@@ -73,7 +73,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 5,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 2500,
     autoplayHoverPause: true,
     responsiveClass: true,
     responsive: {
@@ -96,7 +96,7 @@ $('.custom-carousel').owlCarousel({
     loop: true,
     margin: 5,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 2500,
     autoplayHoverPause: true,
     responsiveClass: true,
     responsive: {
@@ -118,7 +118,7 @@ $('.custom-carousel').owlCarousel({
 
 const scheduleData = {
     day1: {
-        date: "DECEMBER 9, 2024 (Monday) | Multilingual Speech Processing",
+        date: "DECEMBER 9, 2024 (Monday)",
         events: [
             {
                 time: "08:00 a.m - 09:00 a.m",
@@ -194,14 +194,14 @@ const scheduleData = {
         ]
     },
     day2: {
-        date: "DECEMBER 10, 2024 (Tuesday) | Automatic Speech Recognition",
+        date: "DECEMBER 10, 2024 (Tuesday)",
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",
                 title: "Invited Talk 4 - Multi-Lingual Audio Deepfake Detection Corpus",
                 speaker: "<strong>Dr. Hemant A Patil</strong>",
                 venue: "Peacock Hall",
-                description: "The proliferation of advanced audio synthesis technologies has raised critical concerns about misinformation and identity fraud. This talk delves into the development of a comprehensive multi-lingual audio deepfake detection corpus, examining innovative methodological approaches for creating robust datasets that capture the nuanced linguistic and acoustic variations across different languages, while addressing the technical challenges of identifying synthesized speech artifacts in an increasingly complex digital landscape."
+                description: "Deepfakes are artificially generated fake media using deep learning (DL) methods. Recent study found that deepfakes are challenging to detect even for human listeners, however, machines can do better job in their detection. This talk present development of recent Multi-Lingual Audio Deepfake Detection Corpus (MLADDC) to boost the Audio DeepFake Detection (ADD) research. Existing datasets for ADD suffer from several limitations; in particular, they are limited to one or two languages. Proposed dataset contains 20 languages, which have been released in 4 Tracks (6 - Indian languages, 14 - International languages, 20 languages half-truth data, and combined data). Moreover, the proposed dataset has 400 K files (1,125+ hours) of data, which makes it one of the largest datasets. Deepfakes in MLADDC have been produced using advanced Deep Learning (DL) methods, such as HiFi- GAN and BigVGAN. Another novelty of this corpus lies in its sub-dataset, that has partial deepfakes (Half-Truth). We compared our dataset with various existing datasets, using cross-database method. For comparison, we also proposed baseline accuracy of 68.44%, and EER of 40.9% with MFCC features and CNN classifier (14 languages track only) indicating technological challenges associated with ADD task on proposed dataset. The talk will also discuss some of the open research challenges in this ADD research, more so, in the multilingual context."
             },
             {
                 time: "10:00 a.m - 11:00 a.m",
@@ -264,7 +264,7 @@ const scheduleData = {
     },
 
     day3: {
-        date: "DECEMBER 11, 2024 (Wednesday) | Speech Synthesis",
+        date: "DECEMBER 11, 2024 (Wednesday)",
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",
@@ -278,7 +278,7 @@ const scheduleData = {
                 title: "Invited Talk 8 - Representation Learning For Emotional Artificial Intelligence",
                 speaker: "<strong>Dr. Sriram Ganapathy</strong>",
                 venue: "Peacock Hall",
-                description: "Emotional intelligence in artificial systems demands sophisticated understanding of human affect and expression. This talk explores innovative approaches to representation learning that capture the subtle complexities of human emotions, examining how advanced machine learning techniques can encode emotional cues from multiple modalities such as speech, text, and facial expressions. The discussion delves into how these learned representations enable AI systems to better understand, interpret, and respond to human emotional states, advancing the field of affective computing."
+                description: "Though AI systems now excel at understanding and generating human languages, they are largely emotionally inept, thereby hindering their ability to engage in natural  interactions. This talk focuses on the frontier of artificial emotional intelligence in speech systems, addressing two key challenges: emotion recognition and generation. I will delve into how representation learning techniques impact both these areas. <br> First, I will describe our efforts on Content and Acoustic Representations for Emotions (CARE), a novel approach based on distillation based learning of speech representations. By capturing the subtle nuances of representing acoustic and textual contents of speech, CARE allows to better recognize the emotional classes of speech. <br> Next, I will discuss our recent work on zero-shot emotion conversion, where a system learns to transform the emotional tone of speech without any supervision. This task is  made possible through the power of disentangled and factorized representations of speech. <br>Finally, the talk will explore the application of these approaches to data from Indian languages, opening up the possibilities for building emotionally intelligent speech and language systems for Indian users."
             },
             {
                 time: "11:00 a.m - 11:30 a.m",
@@ -341,7 +341,7 @@ const scheduleData = {
     },
 
     day4: {
-        date: "DECEMBER 12, 2024 (Thursday) | Healthcare",
+        date: "DECEMBER 12, 2024 (Thursday)",
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",

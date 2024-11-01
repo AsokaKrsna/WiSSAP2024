@@ -140,6 +140,27 @@ body {
     letter-spacing: 0.2em;
 }
 
+.dropdown-item {
+    color: #fff;
+    background-color: #0F1726;
+    transition: var(--primaryTransition);
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: var(--primaryHoverColor);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item.active {
+    color: var(--primaryHoverColor);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .active,
 .active-link {
     color: var(--primaryHoverColor) !important;
