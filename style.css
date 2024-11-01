@@ -757,7 +757,7 @@ header {
     height: 3px;
     background: var(--primaryHoverColor);
     left: 44.8%;
-    top: 44%;
+    top: 140%;
 }
 
 .schedule_heading h1 {
@@ -947,7 +947,7 @@ header {
     width: 75px;
     height: 3px;
     background: var(--primaryHoverColor);
-    top: 48%;
+    top: 140%;
     left: 44.8%;
 }
 
@@ -1123,7 +1123,7 @@ header {
     width: 75px;
     height: 3px;
     background: var(--primaryHoverColor);
-    top: 56%;
+    top: 130%;
     left: 44.8%;
 }
 
@@ -1400,8 +1400,8 @@ header {
     position: absolute;
     width: 75px;
     height: 3px;
-    top: 47%;
-    left: 44.8%;
+    top: 140%;
+    left: 47%;
     background: var(--primaryHoverColor);
 }
 

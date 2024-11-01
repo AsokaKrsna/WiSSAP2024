@@ -129,7 +129,7 @@ const scheduleData = {
             },
             {
                 time: "09:00 a.m - 10:00 a.m",
-                title: "Inugral Function",
+                title: "Inaugural Function",
                 speaker: "",
                 venue: "Peacock Hall",
                 description: "Get ready to be inspired by our esteemed speakers and guests."
@@ -248,7 +248,7 @@ const scheduleData = {
             {
                 time: "03:30 p.m - 05:00 p.m",
                 title: "Industry Perspective Talk 3 - Attentive Multilingual Speech Encoder for Zero-Prior ASR",
-                speaker: "<strong>Dr. Debamalya Chajrabarty </strong>",
+                speaker: "<strong>Dr. Debamalya Chakraborty </strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
