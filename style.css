@@ -1400,7 +1400,7 @@ header {
     position: absolute;
     width: 75px;
     height: 3px;
-    top: 37%;
+    top: 140%;
     left: 47%;
     background: var(--primaryHoverColor);
 }
