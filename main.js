@@ -144,7 +144,7 @@ const scheduleData = {
             {
                 time: "10:30 a.m - 11:30 a.m",
                 title: "Invited Talk 1 - Building code switched/code mixed speech synthesis in Indian Languages.",
-                speaker: "<strong>Dr. Hema A Murthy</strong>",
+                speaker: "<strong>Dr. Hema A Murthy and Dr. Anusha Prakash</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
@@ -196,6 +196,14 @@ const scheduleData = {
     day2: {
         date: "DECEMBER 10, 2024 (Tuesday)",
         events: [
+            {
+                time: "8.30 a.m - 9.00 a.m",
+                title: "Invited Talk  - Quantum Leap in Speech Recognition – Beyond GenAI and LLMs",
+                speaker: "<strong>Dr. Nixon Patel</strong>",
+                venue: "Peacock Hall",
+                description: "strong>Abstract: </strong> Artificial intelligence's (AI), and its derivatives like the Generative AI and Large Language Models (LLMs), capabilities have significantly transformed speech technology in the past decade and a half. But an equally exciting innovation is anticipated to be an even bigger game changer in the industry: quantum computing. This advancing field in computer science uses the unique principles of quantum mechanics to address problems that lie beyond the capabilities of even the most sophisticated classical computers.Speech recognition systems, for instance, rely on recognizing patterns in sound, context, and language structures, which require immense computational power.Current classical methods involve comparing a voice input against massive phonetic and language pattern databases to determine the most accurate match, but quantum algorithms, using qubits in superposition, could compare and match these patterns more efficiently. This would significantly improve the speed and accuracy of transcription, making systems like virtual assistants or automated customer service more responsive and accurate. Quantum algorithms can also improve noise reduction and data compression techniques, making speech recognition more reliable in noisy environments.Furthermore, quantum computing could revolutionize machine learning models used for speech synthesis (converting text into realistic speech) and emotion detection (analyzing sentiment and emotional tone in speech).Finally, language can naturally be treated as a quantum process and, as a result, is subject to quantum computational benefits. Particular features of current Quantum Natural Language Processing (QNLP) include language-neutral but still fully interpretable representations—meaning-awareness well beyond current LLMs, which can substantially help with speech recognition—and structures that are intrinsically multimodal and can strongly support multimodal forms of speech technology for Indic languages!
+
+            },
             {
                 time: "9:00 a.m - 10:00 a.m",
                 title: "Invited Talk 4 - Multi-Lingual Audio Deepfake Detection Corpus",
@@ -345,17 +353,17 @@ const scheduleData = {
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",
-                title: "Round Table Discussion on The Future Directions of Multilingual Speech Processing.",
-                speaker: "",
+                title: "Invited Talk  - Implicit Processing of Speech for Spoken Language Diarization",
+                speaker: "Dr. Jagabandhu Mishra",
                 venue: "Peacock Hall",
-                description: "This engaging round table discussion brings together leading experts to explore emerging trends and critical challenges in multilingual speech technology. The session examines key research directions including cross-lingual transfer learning, universal speech representations, low-resource language solutions, and the integration of cultural and linguistic diversity in speech systems. Participants will deliberate on technological roadmaps, ethical considerations, and collaborative approaches needed to advance speech processing technologies that serve the world's linguistic diversity."
+                description: "Spoken language diarization (LD) involves the automatic annotation of monolingual segments within a code-switched (CS) speech signal. CS occurs when a speaker alternates between languages during a conversation. Studies indicate that approximately 43% of the world's population is bilingual, meaning that natural conversations often include bilingual or multilingual utterances. Research suggests that the performance of speech-based systems declines significantly when handling CS utterances. One potential solution is to incorporate LD as a preprocessing module to mitigate this issue. In general, either of the languages present in the CS utterance (assume native Indian languages) is resource-scarce in nature. Hence the use of implicit approaches is preferable over explicit (need linguistic resources). However, implementing these approaches presents several challenges. This presentation will highlight the progress made in addressing these challenges and the opportunities for further advancements."
             },
             {
                 time: "10:00 a.m - 11:00 a.m",
-                title: "Presentation by startups",
-                speaker: "",
+                title: "Invited Talk - Processing of speech recorded from stroke patients",
+                speaker: "Dr. Govind D",
                 venue: "",
-                description: "Details will be updated soon"
+                description: "This talk examines the complex challenges and methodologies involved in analyzing speech patterns of stroke patients, exploring how advanced signal processing and machine learning techniques can help understand and quantify speech impairments. The discussion covers innovative approaches to processing dysarthric speech, tracking recovery patterns, and developing automated assessment tools, ultimately contributing to better rehabilitation strategies and clinical outcomes for stroke survivors with speech disorders."
             },
             {
                 time: "11:00 a.m - 11:30 a.m",
@@ -366,10 +374,10 @@ const scheduleData = {
             },
             {
                 time: "11:30 a.m - 12:30 p.m",
-                title: "Invited Talk 13 - Processing of speech recorded from stroke patients",
-                speaker: "<strong>Dr. Govind D</strong>",
+                title: "Invited Talk  - Approaches to recording and processing of voice samples of neurological patients",
+                speaker: "<strong>Dr. Rajeev Aravindakshan</strong>",
                 venue: "Peacock Hall",
-                description: "This talk examines the complex challenges and methodologies involved in analyzing speech patterns of stroke patients, exploring how advanced signal processing and machine learning techniques can help understand and quantify speech impairments. The discussion covers innovative approaches to processing dysarthric speech, tracking recovery patterns, and developing automated assessment tools, ultimately contributing to better rehabilitation strategies and clinical outcomes for stroke survivors with speech disorders."
+                description: "This talk addresses the specialized methodologies and considerations required when collecting and analyzing voice samples from individuals with neurological conditions. The discussion explores crucial aspects of data collection protocols, environmental controls, and advanced signal processing techniques tailored for impaired speech patterns. From managing patient fatigue and varying symptom severity to developing robust analysis frameworks, the talk examines how these approaches contribute to better understanding of neurological conditions and their impact on speech, ultimately advancing both diagnostic capabilities and treatment strategies."
             },
             {
                 time: "12:30 p.m - 02:00 p.m",
@@ -381,14 +389,14 @@ const scheduleData = {
             {
                 time: "02:00 p.m - 03:00 p.m",
                 title: "Invited Talk 14 - Insights into Speech Disorders: Bridging Research and Practice",
-                speaker: "<strong>Rakesh U</strong>",
+                speaker: "<strong>Dr. Rakesh U K</strong>",
                 venue: "Peacock Hall",
                 description: "This talk explores the vital intersection between clinical research and practical applications in understanding and treating speech disorders. The discussion delves into cutting-edge research findings on various speech pathologies, examining how these insights inform therapeutic interventions, diagnostic tools, and technological solutions. By connecting laboratory discoveries with clinical practice, the talk highlights innovative approaches that enhance assessment accuracy, treatment effectiveness, and quality of life for individuals with speech disorders."
             },
             {
                 time: "03:00 p.m - 04:00 p.m",
-                title: "Invited Talk 15 -  Approaches to recording and processing of voice samples of neurological patients",
-                speaker: "<strong>Dr. Rajeev Aravindakshan</strong>",
+                title: "Invited Talk - Securing the Audio Domain: Cyber Threats and Effective Mitigation Strategies",
+                speaker: "<strong>Dr. Arun Sankar M S</strong>",
                 venue: "Peacock Hall",
                 description: "This talk addresses the specialized methodologies and considerations required when collecting and analyzing voice samples from individuals with neurological conditions. The discussion explores crucial aspects of data collection protocols, environmental controls, and advanced signal processing techniques tailored for impaired speech patterns. From managing patient fatigue and varying symptom severity to developing robust analysis frameworks, the talk examines how these approaches contribute to better understanding of neurological conditions and their impact on speech, ultimately advancing both diagnostic capabilities and treatment strategies."
             },
