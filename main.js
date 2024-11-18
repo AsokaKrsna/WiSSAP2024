@@ -178,7 +178,7 @@ const scheduleData = {
             },
             {
                 time: "03:30 p.m - 05:00 p.m",
-                title: "Industry Perspective Talk 1 - Title to be updated",
+                title: "Industry Perspective Talk 1 - Speech recognition in noisy environments: Focus on far field and call communications",
                 speaker: "<strong>Vikram C M</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
