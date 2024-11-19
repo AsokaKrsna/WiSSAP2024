@@ -143,14 +143,14 @@ const scheduleData = {
             },
             {
                 time: "10:30 a.m - 11:30 a.m",
-                title: "Invited Talk 1 - Building code switched/code mixed speech synthesis in Indian Languages.",
+                title: "Invited Talk - Building code switched/code mixed speech synthesis in Indian Languages.",
                 speaker: "<strong>Dr. Hema A Murthy and Dr. Anusha Prakash</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
             {
                 time: "11:30 a.m - 12:30 p.m",
-                title: "Invited Talk 2 - Advances in Deep Learning",
+                title: "Invited Talk - Advances in Deep Learning",
                 speaker: "<strong>Dr. C. Chandra Sekhar</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
@@ -164,7 +164,7 @@ const scheduleData = {
             },
             {
                 time: "02:00 p.m - 03:00 p.m",
-                title: "Invited Talk 3 - Speech Processing using Deep Neural Networks (DNN)",
+                title: "Invited Talk - Speech Processing using Deep Neural Networks (DNN)",
                 speaker: "<strong>Dr. K Sri Rama Murthy</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
@@ -198,7 +198,7 @@ const scheduleData = {
         events: [
             {
                 time: "8.30 a.m - 9.00 a.m",
-                title: "Invited Talk  - Quantum Leap in Speech Recognition – Beyond GenAI and LLMs",
+                title: "Invited Talk - Quantum Leap in Speech Recognition – Beyond GenAI and LLMs",
                 speaker: "<strong>Dr. Nixon Patel</strong>",
                 venue: "Peacock Hall",
                 description: "strong>Abstract: </strong> Artificial intelligence's (AI), and its derivatives like the Generative AI and Large Language Models (LLMs), capabilities have significantly transformed speech technology in the past decade and a half. But an equally exciting innovation is anticipated to be an even bigger game changer in the industry: quantum computing. This advancing field in computer science uses the unique principles of quantum mechanics to address problems that lie beyond the capabilities of even the most sophisticated classical computers.Speech recognition systems, for instance, rely on recognizing patterns in sound, context, and language structures, which require immense computational power.Current classical methods involve comparing a voice input against massive phonetic and language pattern databases to determine the most accurate match, but quantum algorithms, using qubits in superposition, could compare and match these patterns more efficiently. This would significantly improve the speed and accuracy of transcription, making systems like virtual assistants or automated customer service more responsive and accurate. Quantum algorithms can also improve noise reduction and data compression techniques, making speech recognition more reliable in noisy environments.Furthermore, quantum computing could revolutionize machine learning models used for speech synthesis (converting text into realistic speech) and emotion detection (analyzing sentiment and emotional tone in speech).Finally, language can naturally be treated as a quantum process and, as a result, is subject to quantum computational benefits. Particular features of current Quantum Natural Language Processing (QNLP) include language-neutral but still fully interpretable representations—meaning-awareness well beyond current LLMs, which can substantially help with speech recognition—and structures that are intrinsically multimodal and can strongly support multimodal forms of speech technology for Indic languages!"
@@ -206,7 +206,7 @@ const scheduleData = {
             },
             {
                 time: "9:00 a.m - 10:00 a.m",
-                title: "Invited Talk 4 - Multi-Lingual Audio Deepfake Detection Corpus",
+                title: "Invited Talk - Multi-Lingual Audio Deepfake Detection Corpus",
                 speaker: "<strong>Dr. Hemant A Patil</strong>",
                 venue: "Peacock Hall",
                 description: "strong>Abstract: </strong> Deepfakes are artificially generated fake media using deep learning (DL) methods. Recent study found that deepfakes are challenging to detect even for human listeners, however, machines can do better job in their detection. This talk present development of recent Multi-Lingual Audio Deepfake Detection Corpus (MLADDC) to boost the Audio DeepFake Detection (ADD) research. Existing datasets for ADD suffer from several limitations; in particular, they are limited to one or two languages. Proposed dataset contains 20 languages, which have been released in 4 Tracks (6 - Indian languages, 14 - International languages, 20 languages half-truth data, and combined data). Moreover, the proposed dataset has 400 K files (1,125+ hours) of data, which makes it one of the largest datasets. Deepfakes in MLADDC have been produced using advanced Deep Learning (DL) methods, such as HiFi- GAN and BigVGAN. Another novelty of this corpus lies in its sub-dataset, that has partial deepfakes (Half-Truth). We compared our dataset with various existing datasets, using cross-database method. For comparison, we also proposed baseline accuracy of 68.44%, and EER of 40.9% with MFCC features and CNN classifier (14 languages track only) indicating technological challenges associated with ADD task on proposed dataset. The talk will also discuss some of the open research challenges in this ADD research, more so, in the multilingual context."
@@ -227,7 +227,7 @@ const scheduleData = {
             },
             {
                 time: "11:30 a.m - 12:30 p.m",
-                title: "Invited Talk 5 - Recent Efforts for Automatic Speech Recognition (ASR) in Indian Languages",
+                title: "Invited Talk - Recent Efforts for Automatic Speech Recognition (ASR) in Indian Languages",
                 speaker: "<strong>Dr. S Umesh</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
@@ -241,7 +241,7 @@ const scheduleData = {
             },
             {
                 time: "02:00 p.m - 03:00 p.m",
-                title: "Invited Talk 6 - Spoken Language Identification Techniques for Indian Languages",
+                title: "Invited Talk - Spoken Language Identification Techniques for Indian Languages",
                 speaker: "<strong>Dileep A D</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
@@ -276,14 +276,14 @@ const scheduleData = {
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",
-                title: "Invited Talk 7 - Are Indic languages  prosodically different?",
+                title: "Invited Talk - Are Indic languages  prosodically different?",
                 speaker: "<strong>Dr. T Nagarajan</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
             {
                 time: "10:00 a.m - 11:00 a.m",
-                title: "Invited Talk 8 - Representation Learning For Emotional Artificial Intelligence",
+                title: "Invited Talk - Representation Learning For Emotional Artificial Intelligence",
                 speaker: "<strong>Dr. Sriram Ganapathy</strong>",
                 venue: "Peacock Hall",
                 description: "strong>Abstract: </strong>Though AI systems now excel at understanding and generating human languages, they are largely emotionally inept, thereby hindering their ability to engage in natural  interactions. This talk focuses on the frontier of artificial emotional intelligence in speech systems, addressing two key challenges: emotion recognition and generation. I will delve into how representation learning techniques impact both these areas. <br> First, I will describe our efforts on Content and Acoustic Representations for Emotions (CARE), a novel approach based on distillation based learning of speech representations. By capturing the subtle nuances of representing acoustic and textual contents of speech, CARE allows to better recognize the emotional classes of speech. <br> Next, I will discuss our recent work on zero-shot emotion conversion, where a system learns to transform the emotional tone of speech without any supervision. This task is  made possible through the power of disentangled and factorized representations of speech. <br>Finally, the talk will explore the application of these approaches to data from Indian languages, opening up the possibilities for building emotionally intelligent speech and language systems for Indian users."
@@ -297,7 +297,7 @@ const scheduleData = {
             },
             {
                 time: "11:30 a.m - 12:30 p.m",
-                title: "Invited Talk 9 - Assistive speech technologies",
+                title: "Invited Talk - Assistive speech technologies",
                 speaker: "<strong>Dr. P Vijayalakshmi</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
@@ -311,7 +311,7 @@ const scheduleData = {
             },
             {
                 time: "02:00 p.m - 03:00 p.m",
-                title: "Invited Talk 10 - Learning for machines: Insights from acoustic analyses",
+                title: "Invited Talk - Learning for machines: Insights from acoustic analyses",
                 speaker: "<strong>Priyankoo Sarmah</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
@@ -353,7 +353,7 @@ const scheduleData = {
         events: [
             {
                 time: "9:00 a.m - 10:00 a.m",
-                title: "Invited Talk  - Implicit Processing of Speech for Spoken Language Diarization",
+                title: "Invited Talk - Implicit Processing of Speech for Spoken Language Diarization",
                 speaker: "Dr. Jagabandhu Mishra",
                 venue: "Peacock Hall",
                 description: "Spoken language diarization (LD) involves the automatic annotation of monolingual segments within a code-switched (CS) speech signal. CS occurs when a speaker alternates between languages during a conversation. Studies indicate that approximately 43% of the world's population is bilingual, meaning that natural conversations often include bilingual or multilingual utterances. Research suggests that the performance of speech-based systems declines significantly when handling CS utterances. One potential solution is to incorporate LD as a preprocessing module to mitigate this issue. In general, either of the languages present in the CS utterance (assume native Indian languages) is resource-scarce in nature. Hence the use of implicit approaches is preferable over explicit (need linguistic resources). However, implementing these approaches presents several challenges. This presentation will highlight the progress made in addressing these challenges and the opportunities for further advancements."
@@ -388,7 +388,7 @@ const scheduleData = {
             },
             {
                 time: "02:00 p.m - 03:00 p.m",
-                title: "Invited Talk 14 - Insights into Speech Disorders: Bridging Research and Practice",
+                title: "Invited Talk - Insights into Speech Disorders: Bridging Research and Practice",
                 speaker: "<strong>Dr. Rakesh U K</strong>",
                 venue: "Peacock Hall",
                 description: "This talk explores the vital intersection between clinical research and practical applications in understanding and treating speech disorders. The discussion delves into cutting-edge research findings on various speech pathologies, examining how these insights inform therapeutic interventions, diagnostic tools, and technological solutions. By connecting laboratory discoveries with clinical practice, the talk highlights innovative approaches that enhance assessment accuracy, treatment effectiveness, and quality of life for individuals with speech disorders."
