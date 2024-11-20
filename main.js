@@ -728,3 +728,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check every minute
     setInterval(checkAllPricingBlocks, 60000);
 });
+
+
+document.addEventListener('click', function(event) {
+    // Check if the clicked element is an anchor tag
+    const link = event.target.closest('a');
+    
+    if (link) {
+        // Check if href is empty or just a placeholder
+        const href = link.getAttribute('href');
+        if (!href || href.trim() === '' || href === '#' || href === 'javascript:void(0)') {
+            // Prevent default link behavior
+            event.preventDefault();
+            
+            // Optional: Add a visual indication that the link is disabled
+            link.style.pointerEvents = 'none';
+            link.style.opacity = '0.5';
+        }
+    }
+});
