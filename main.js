@@ -138,7 +138,7 @@ const scheduleData = {
                 time: "10:30 a.m - 11:00 a.m",
                 title: "Hi Tea",
                 speaker: "",
-                venue: "Open Air Theater",
+                venue: "C Block Lobby",
                 description: "N/A"
             },
             {
@@ -182,12 +182,12 @@ const scheduleData = {
                 time: "04:30 p.m - 05:00 p.m",
                 title: "Refreshment Break",
                 speaker: "",
-                venue: "Open Air Theater",
+                venue: "Refreshment Area",
                 description: "N/A"
             },
             
             {
-                time: "5:00 a.m - 6:00 p.m",
+                time: "5:00 p.m - 6:00 p.m",
                 title: "Invited Talk - Assistive speech technologies",
                 speaker: "<strong>Dr. P Vijayalakshmi</strong>",
                 venue: "Peacock Hall",
@@ -218,7 +218,7 @@ const scheduleData = {
                 time: "10:30 a.m - 11:00 a.m",
                 title: "Meet and Greet",
                 speaker: "",
-                venue: "Open Air Theater",
+                venue: "Refreshment Area",
                 description: "Snacks and beverages will be served. Time to network and recharge!"
             },
             {
@@ -264,7 +264,7 @@ const scheduleData = {
                 time: "04:30 p.m - 05:00 p.m",
                 title: "Snack Interval",
                 speaker: "",
-                venue: "Open Air Theater",
+                venue: "Refreshment Area",
                 description: "Its time to recharge and network with other participants."
             },
 
@@ -310,7 +310,7 @@ const scheduleData = {
                 time: "10:30 a.m - 11:00 a.m",
                 title: "Mingling Moment",
                 speaker: "",
-                venue: "Open Air Theater",
+                venue: "Refreshment Area",
                 description: "Meet and greet with the speakers and other participants. Snacks and beverages will be served."
             },
 
@@ -350,7 +350,7 @@ const scheduleData = {
                 time: "04:30 p.m - 05:00 p.m",
                 title: "Snack Interval",
                 speaker: "",
-                venue: "Open Air Theater",
+                venue: "Refreshment Area",
                 description: "Have a break and network with other participants."
             },
 
@@ -363,7 +363,7 @@ const scheduleData = {
             },
 
             {
-                time: "06:00 p.m - 07:30 p.m",
+                time: "06:30 p.m onwards",
                 title: "Cultural Night",
                 speaker: "",
                 venue: "Will be updated later",
@@ -396,7 +396,7 @@ const scheduleData = {
                 time: "11:00 a.m - 11:30 a.m",
                 title: "Mingling Moment",
                 speaker: "",
-                venue: "Open Air Theater",
+                venue: "Refreshment Area",
                 description: "Meet and greet with the speakers and other participants. Snacks and beverages will be served."
             },
             {
@@ -435,10 +435,10 @@ const scheduleData = {
                 description: "N/A"
             },
             {
-                time: "05:00 p.m - 05:30 p.m",
+                time: "05:30 p.m - 06:00 p.m",
                 title: "Hi Tea",
                 speaker: "",
-                venue: "Open Air Theater",
+                venue: "C Block Lobby",
                 description: "N/A"
             },
             
@@ -762,7 +762,7 @@ document.addEventListener('click', function(event) {
     // Check if the clicked element is an anchor tag
     const link = event.target.closest('a');
     
-    if (link) {
+    if (link && !link.closest('.main_nav-bar')) {
         // Check if href is empty or just a placeholder
         const href = link.getAttribute('href');
         if (!href || href.trim() === '' || href === '#' || href === 'javascript:void(0)') {
