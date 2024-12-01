@@ -150,10 +150,30 @@ const scheduleData = {
             },
             {
                 time: "12:00 p.m - 1:00 p.m",
-                title: "Invited Talk - A multilingual perspective to TTS systems for Indian languages.",
+                title: "Invited Talk - A Multilingual Perspective to TTS Synthesis for Indian Languages.",
                 speaker: "<strong>Dr. Hema A Murthy and Dr. Anusha Prakash</strong>",
                 venue: "Peacock Hall",
-                description: "<strong>Abstract: </strong>Will be updated soon <br><br> <strong>About Speaker: </strong> Dr. Anusha Prakash received the B.E. degree in Electrical and Electronics Engineering from Visvesvaraya Technological University, Belagavi, India, in 2012, the M.S. degree in Applied Mechanics from the Indian Institute of Technology (IIT) Madras, Chennai, India, in 2017, and the Ph.D. degree in Electrical Engineering from IIT Madras in 2024. Her research interests include text-to-speech (TTS) synthesis, particularly from a multilingual perspective for low-resource Indian languages, and improving the quality of dysarthric speech. She has been involved in various Government-funded projects and was a part of the Speech Technology consortium for the National Language Translation Mission. She is currently an independent researcher working on TTS systems."
+                description: "<strong>Abstract: </strong>India has a rich linguistic diversity, with 1369 languages,\
+                 including 22 official languages, excluding English. Despite a population of over one billion, only 74.04% \
+                 of the population is literate. This underscores the need for the development of high-quality Indic speech\
+                  synthesis systems to effectively engage the broader public. However, this task is challenging due to the \
+                  limited availability of high-quality training data and the varying grapheme representations across different\
+                   languages.In this talk, we will present two approaches to TTS synthesis for an unseen language: \
+                   (1) We train multilingual systems based on language families to accommodate new languages that have \
+                   limited or no TTS data (zero-shot). The goal is to leverage phonotactic similarities between languages \
+                   within the same family. (2) We also study the effectiveness of zero-shot synthesis of text in an unseen \
+                   language by modifying the grapheme-to-phoneme rules and using a non-native TTS system. This approach is \
+                   motivated by the fact that languages form a dialect continuum, allowing for synthesis with a suitable \
+                   monolingual TTS system.\
+                   <br><br><strong>About Speakers: <br></strong><Strong>Dr. Hema A Murty</strong> received a bachelor’s degree from Osmania University, Hyderabad, India, in 1980, a master’s degree from McMaster University, Hamilton, Canada, in 1986, and a PhD degree from the Indian Institute of Technology (IIT) Madras, Chennai, India, in 1992. She is currently an Honorary Emeritus Professor at the Department of Computer Science and Engineering, IIT Madras, and a Distinguished Visiting Faculty at Shiv Nadar University, Chennai. Her research interests include speech processing, computer networks, music information retrieval, computational brain research, and other areas of machine learning and signal processing. She is a Fellow of Asia-Pacific Artificial Intelligence Association, 2023, Fellow of ISCA (International Speech Communication Association), 2022 and a Fellow of INAE (Indian National Academy of Engineering), 2017.  She was awarded the IBM faculty award in 2006.  She has been involved in various projects funded by the Government of India (GoI). She was the Chief Investigator of a consortium project to build text-to-speech (TTS) systems in 13 Indian languages. She is currently leading the Speech Technology efforts for the Natural Language Translation Mission funded by GoI. \
+                   <br><br> <strong> Dr. Anusha Prakash </strong> received the B.E. \
+                   degree in Electrical and Electronics Engineering from Visvesvaraya Technological University, Belagavi, \
+                   India, in 2012, the M.S. degree in Applied Mechanics from the Indian Institute of Technology (IIT) Madras,\
+                    Chennai, India, in 2017, and the Ph.D. degree in Electrical Engineering from IIT Madras in 2024. Her \
+                    research interests include text-to-speech (TTS) synthesis, particularly from a multilingual perspective\
+                 for low-resource Indian languages, and improving the quality of dysarthric speech. She has been involved in \
+                 various Government-funded projects and was a part of the Speech Technology consortium for the National \
+                 Language Translation Mission. She is currently an independent researcher working on TTS systems."
             },
             {
                 time: "1:00 p.m - 02:30 p.m",
@@ -194,6 +214,14 @@ const scheduleData = {
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
 
+            {
+                time: "07:00 p.m onwards",
+                title: "Ideas & Appetites",
+                speaker: "",
+                venue: "WIll be updated later",
+                description: "Enjoy the journey. Chat with other bright minds, share your thoughts, and enjoy a delicious meal. It's the perfect recipe for making new connections!"
+            },
+
             // Add more events for Day 1 as needed
         ]
     },
@@ -207,12 +235,13 @@ const scheduleData = {
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong> Artificial intelligence's (AI), and its derivatives like the Generative AI and Large Language Models (LLMs), capabilities have significantly transformed speech technology in the past decade and a half. But an equally exciting innovation is anticipated to be an even bigger game changer in the industry: quantum computing. This advancing field in computer science uses the unique principles of quantum mechanics to address problems that lie beyond the capabilities of even the most sophisticated classical computers.Speech recognition systems, for instance, rely on recognizing patterns in sound, context, and language structures, which require immense computational power.Current classical methods involve comparing a voice input against massive phonetic and language pattern databases to determine the most accurate match, but quantum algorithms, using qubits in superposition, could compare and match these patterns more efficiently. This would significantly improve the speed and accuracy of transcription, making systems like virtual assistants or automated customer service more responsive and accurate. Quantum algorithms can also improve noise reduction and data compression techniques, making speech recognition more reliable in noisy environments.Furthermore, quantum computing could revolutionize machine learning models used for speech synthesis (converting text into realistic speech) and emotion detection (analyzing sentiment and emotional tone in speech).Finally, language can naturally be treated as a quantum process and, as a result, is subject to quantum computational benefits. Particular features of current Quantum Natural Language Processing (QNLP) include language-neutral but still fully interpretable representations—meaning-awareness well beyond current LLMs, which can substantially help with speech recognition—and structures that are intrinsically multimodal and can strongly support multimodal forms of speech technology for Indic languages!"
             },
+            
             {
-                time: "09:30 a.m - 10:30 a.m",
-                title: "Invited Talk - Multi-Lingual Audio Deepfake Detection Corpus",
-                speaker: "<strong>Dr. Hemant A Patil</strong>",
+                time: "09:30 a.m - 10:30 p.m",
+                title: "Pannel Discussion - Future direction of Speech Processing in Indian Languages",
+                speaker: "",
                 venue: "Peacock Hall",
-                description: "<strong>Abstract: </strong> Deepfakes are artificially generated fake media using deep learning (DL) methods. Recent study found that deepfakes are challenging to detect even for human listeners, however, machines can do better job in their detection. This talk present development of recent Multi-Lingual Audio Deepfake Detection Corpus (MLADDC) to boost the Audio DeepFake Detection (ADD) research. Existing datasets for ADD suffer from several limitations; in particular, they are limited to one or two languages. Proposed dataset contains 20 languages, which have been released in 4 Tracks (6 - Indian languages, 14 - International languages, 20 languages half-truth data, and combined data). Moreover, the proposed dataset has 400 K files (1,125+ hours) of data, which makes it one of the largest datasets. Deepfakes in MLADDC have been produced using advanced Deep Learning (DL) methods, such as HiFi- GAN and BigVGAN. Another novelty of this corpus lies in its sub-dataset, that has partial deepfakes (Half-Truth). We compared our dataset with various existing datasets, using cross-database method. For comparison, we also proposed baseline accuracy of 68.44%, and EER of 40.9% with MFCC features and CNN classifier (14 languages track only) indicating technological challenges associated with ADD task on proposed dataset. The talk will also discuss some of the open research challenges in this ADD research, more so, in the multilingual context. <br> <br> <strong>About Speaker: </strong>Dr. Hemant A. Patil received Ph.D. degree from the Indian Institute of Technology (IIT), Kharagpur, India, in July 2006. Since Feb. 2007, he has been a faculty member at DA-IICT Gandhinagar, India and developed Speech Research Lab recognized as ISCA Speech Labs (the ONLY such lab of its kind in India) at DA-IICT. Prof. Patil is member of ISCA, IEEE, IEEE Signal Processing Society, IEEE Circuits and Systems Society, EURASIP, APSIPA, an affiliate member of IEEE SLTC, and American Mathematical Society (AMS). He is regular reviewer for IEEE Signal Processing Magazine, IEEE Trans. Speech, Audio and Language Processing, Speech Communication, Elsevier, Computer Speech and Language, Elsevier, ICASSP, INTERSPEECH, EUSIPCO, APSIPA ASC, SPCOM, and PReMI. He has published/submitted around 350+ research publications in international conferences/journals/book chapters. He visited department of ECE, University of Minnesota, Minneapolis, USA (May-July, 2009) as short-term scholar. He has been associated (as PI) with three MeitY sponsored projects in ASR, TTS, and QbESTD. He was co-PI for DST sponsored project on India-Digital Heritage (IDH)-Hampi. His research interests include audio deepfake detection, voice liveliness detection, speech and speaker recognition, analysis of spoofing attacks, TTS, assistive speech technologies, such as infant cry and dysarthric speech classification and recognition. He has received DST Fast Track Award for Young Scientists for infant cry analysis. He has coedited four books with Dr. Amy Neustein (EIC, IJST Springer) with titles, Forensic Speaker Recognition (Springer 2011), Signal and Acoustic Modeling for Speech and Communication Disorders (DE GRUYTER, 2018), Voice Technologies for Speech Reconstruction and Enhancement (DE GRUYTER, 2020), and Acoustic Analysis of Pathologies from Infant to Young Adulthood (DE GRUYTER, 2020). Recently, he served as Associate Editor for IEEE Signal Processing Magazine (2021-2023).  Prof. Patil has also served as PRSG Member for three MeitY sponsored projects, namely, “Speech-to-Speech Translation & Performance Measurement Platform for Broadcast Speeches and Talks (e.g., Mann Ki Baat)”, “Indian Languages Speech Resources Development for Speech Applications”, and “Integration of 13 Indian Languages TTS Systems with Screen readers for Windows, Linux, and Android Platforms”. <br> Prof. Patil has taken a lead role in organizing several ISCA supported events@DA-IICT, such as summer/winter schools/CEP workshops (on theme as automatic speech recognition, speaker and language recognition, speech source modeling, text-to-speech synthesis, speech production-perception link, advances in speech processing) and progress review meetings for two MeitY consortia projects all at DA-IICT Gandhinagar. Dr. Patil has supervised 08 doctoral and 57 M.Tech. theses (all in speech processing area). Presently, he is supervising 01 doctoral and 01 master students. He is also co-supervising UG and masters students jointly as part of Samsung PRISM program at DA-IICT. Recently, he offered a joint tutorial with Prof. Haizhou Li (IEEE Fellow and ISCA Fellow) during Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC) 2017, and INTERSPEECH 2018. He offered a joint tutorial with Prof. Heidiki Kawahara (IEEE Fellow and ISCA Fellow) on the topic, “Voice Conversion: Challenges and Opportunities,” during APSIPA ASC 2018, Honolulu, USA. He spent his Sabbatical Leave at Samsung R&D Institute, Bengaluru during May-Aug. 2019. He has been selected as APSIPA Distinguished Lecturer (DL) for 2018-2019, and he has 25+ APSIPA DLs in four countries, namely, India, Singapore, China, and Canada. Recently, he is selected as ISCA Distinguished Lecturer (DL) for 2020-2022, and delivered 25+ ISCA DLs in India, USA, and Malaysia."
+                description: ""
             },
             {
                 time: "10:30 a.m - 11:00 a.m",
@@ -221,14 +250,15 @@ const scheduleData = {
                 venue: "Refreshment Area",
                 description: "Snacks and beverages will be served. Time to network and recharge!"
             },
+
             {
                 time: "11:00 a.m - 12:00 p.m",
-                title: "Industry Perspective Talk - Development of Text to Speech Synthesis System for Santhali - A Low Resource Language",
-                speaker: "<strong>Sri Pranaw Kumar</strong>",
+                title: "Invited Talk - Multi-Lingual Audio Deepfake Detection Corpus",
+                speaker: "<strong>Dr. Hemant A Patil</strong>",
                 venue: "Peacock Hall",
-                description: "<strong>Abstract: </strong>Will be updated soon <br> <br> <strong> About Speaker: </strong> Pranaw Kumar is currently working as a Scientist 'E' /Joint Director at the Centre for Development of Advanced Computing (C-DAC), Mumbai. He has been associated with CDAC Mumbai for the last 16 years. His research interests include language and speech technologies. He works for Text-to-Speech Synthesis System (TTS), Automatic Speech Recognition (ASR) system for Indian Languages, and related applications. He has been involved in the development of Marathi, Odia, and Indian English TTS Systems, Hindi, Marathi, Odia, and English ASR Systems,  and various applications like TTS browser plugin, SMS Reader, TTS building Toolkit (TBT), Framework to integrate TTS system into websites, Speech Enabled IVRS System, Speech Enabled Multilingual chatbot, Speech Enabled Examination System for Visually Impaired Persons, etc. Currently he is Principal Investigator of a consortium based sub project  'Speech technologies in Indian languages' under the Project titled 'National Language Translation Mission (NLTM) : BHASHINI' for Mumbai centre. He was Principal Investigator of following two projects for Mumbai Centre: Natural Language Translation Mission - Automatic Speech Recognition in Indian English, Tamil, Hindi, and Text to Speech Synthesis for conversational speech in Indian languages. <br> Integration of 13 Indian Language TTS Systems with screen-readers for Windows, Linux, and Android platforms"
+                description: "<strong>Abstract: </strong> Deepfakes are artificially generated fake media using deep learning (DL) methods. Recent study found that deepfakes are challenging to detect even for human listeners, however, machines can do better job in their detection. This talk present development of recent Multi-Lingual Audio Deepfake Detection Corpus (MLADDC) to boost the Audio DeepFake Detection (ADD) research. Existing datasets for ADD suffer from several limitations; in particular, they are limited to one or two languages. Proposed dataset contains 20 languages, which have been released in 4 Tracks (6 - Indian languages, 14 - International languages, 20 languages half-truth data, and combined data). Moreover, the proposed dataset has 400 K files (1,125+ hours) of data, which makes it one of the largest datasets. Deepfakes in MLADDC have been produced using advanced Deep Learning (DL) methods, such as HiFi- GAN and BigVGAN. Another novelty of this corpus lies in its sub-dataset, that has partial deepfakes (Half-Truth). We compared our dataset with various existing datasets, using cross-database method. For comparison, we also proposed baseline accuracy of 68.44%, and EER of 40.9% with MFCC features and CNN classifier (14 languages track only) indicating technological challenges associated with ADD task on proposed dataset. The talk will also discuss some of the open research challenges in this ADD research, more so, in the multilingual context. <br> <br> <strong>About Speaker: </strong>Dr. Hemant A. Patil received Ph.D. degree from the Indian Institute of Technology (IIT), Kharagpur, India, in July 2006. Since Feb. 2007, he has been a faculty member at DA-IICT Gandhinagar, India and developed Speech Research Lab recognized as ISCA Speech Labs (the ONLY such lab of its kind in India) at DA-IICT. Prof. Patil is member of ISCA, IEEE, IEEE Signal Processing Society, IEEE Circuits and Systems Society, EURASIP, APSIPA, an affiliate member of IEEE SLTC, and American Mathematical Society (AMS). He is regular reviewer for IEEE Signal Processing Magazine, IEEE Trans. Speech, Audio and Language Processing, Speech Communication, Elsevier, Computer Speech and Language, Elsevier, ICASSP, INTERSPEECH, EUSIPCO, APSIPA ASC, SPCOM, and PReMI. He has published/submitted around 350+ research publications in international conferences/journals/book chapters. He visited department of ECE, University of Minnesota, Minneapolis, USA (May-July, 2009) as short-term scholar. He has been associated (as PI) with three MeitY sponsored projects in ASR, TTS, and QbESTD. He was co-PI for DST sponsored project on India-Digital Heritage (IDH)-Hampi. His research interests include audio deepfake detection, voice liveliness detection, speech and speaker recognition, analysis of spoofing attacks, TTS, assistive speech technologies, such as infant cry and dysarthric speech classification and recognition. He has received DST Fast Track Award for Young Scientists for infant cry analysis. He has coedited four books with Dr. Amy Neustein (EIC, IJST Springer) with titles, Forensic Speaker Recognition (Springer 2011), Signal and Acoustic Modeling for Speech and Communication Disorders (DE GRUYTER, 2018), Voice Technologies for Speech Reconstruction and Enhancement (DE GRUYTER, 2020), and Acoustic Analysis of Pathologies from Infant to Young Adulthood (DE GRUYTER, 2020). Recently, he served as Associate Editor for IEEE Signal Processing Magazine (2021-2023).  Prof. Patil has also served as PRSG Member for three MeitY sponsored projects, namely, “Speech-to-Speech Translation & Performance Measurement Platform for Broadcast Speeches and Talks (e.g., Mann Ki Baat)”, “Indian Languages Speech Resources Development for Speech Applications”, and “Integration of 13 Indian Languages TTS Systems with Screen readers for Windows, Linux, and Android Platforms”. <br> Prof. Patil has taken a lead role in organizing several ISCA supported events@DA-IICT, such as summer/winter schools/CEP workshops (on theme as automatic speech recognition, speaker and language recognition, speech source modeling, text-to-speech synthesis, speech production-perception link, advances in speech processing) and progress review meetings for two MeitY consortia projects all at DA-IICT Gandhinagar. Dr. Patil has supervised 08 doctoral and 57 M.Tech. theses (all in speech processing area). Presently, he is supervising 01 doctoral and 01 master students. He is also co-supervising UG and masters students jointly as part of Samsung PRISM program at DA-IICT. Recently, he offered a joint tutorial with Prof. Haizhou Li (IEEE Fellow and ISCA Fellow) during Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC) 2017, and INTERSPEECH 2018. He offered a joint tutorial with Prof. Heidiki Kawahara (IEEE Fellow and ISCA Fellow) on the topic, “Voice Conversion: Challenges and Opportunities,” during APSIPA ASC 2018, Honolulu, USA. He spent his Sabbatical Leave at Samsung R&D Institute, Bengaluru during May-Aug. 2019. He has been selected as APSIPA Distinguished Lecturer (DL) for 2018-2019, and he has 25+ APSIPA DLs in four countries, namely, India, Singapore, China, and Canada. Recently, he is selected as ISCA Distinguished Lecturer (DL) for 2020-2022, and delivered 25+ ISCA DLs in India, USA, and Malaysia."
             },
-
+            
             {
                 time: "12:00 a.m - 1:00 p.m",
                 title: "Invited Talk - Recent Efforts for Automatic Speech Recognition (ASR) in Indian Languages",
@@ -277,12 +307,13 @@ const scheduleData = {
             },
 
             {
-                time: "06:00 p.m onwards",
-                title: "Ideas & Appetites",
+                time: "06:30 p.m onwards",
+                title: "Cultural Night",
                 speaker: "",
-                venue: "Vijayawada Club",
-                description: "Enjoy the journey. Chat with other bright minds, share your thoughts, and enjoy a delicious meal. It's the perfect recipe for making new connections!"
+                venue: "Will be updated later",
+                description: "N/A"
             },
+
             // Add more events for Day 2 as needed
         ]
     },
@@ -299,15 +330,22 @@ const scheduleData = {
             },*/
 
             {
-                time: "09:00 a.m - 10:30 a.m",
+                time: "09:00 a.m - 10:00 a.m",
                 title: "Industry Perspective Talk - Speech recognition in noisy environments: Focus on far field and call communications",
                 speaker: "<strong>Vikram C M</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
+            {
+                time: "10:00 a.m - 11:00 p.m",
+                title: "Industry Perspective Talk - Development of Text to Speech Synthesis System for Santhali - A Low Resource Language",
+                speaker: "<strong>Sri Pranaw Kumar</strong>",
+                venue: "Peacock Hall",
+                description: "<strong>Abstract: </strong>Santali is the language of the Munda sub-family of Austroasiatic languages, and it is spoken by around 73 lac people (as per the census of 2011) in India, primarily in Jharkhand, Bengal, Odisha, Bihar, and Assam states. Santali language was added to the Eighth schedule in the year 2004, its script Ol Chiki was added to the Unicode Standard in April, 2008, and in December 2013, the University Grants Commission of India decided to introduce the language in the National Eligibility Test to allow lecturers to use the language in colleges and universities. After these decisions, a lot of developments were made towards Santhali content creation, awareness building, providing education & training, etc. However, Santali is an extremely low-resource language and hardly any major NLP tools and technologies like Machine Translation, TTS, ASR, OCR, etc are available. Therefore, there is a lack of systematic study of the Santali language and its script Ol Chiki from the NLP point of view. This talk covers the study and analysis of the Santali language from the point of view of the development of Text to Speech synthesis system which includes steps and challenges involved in Text data preparation, speaker selection, speech data recording, development of the letter-to-sound rule, converting Devanagari script into Olchiki, special peculiarities of the language, etc.  <br> <br> <strong> About Speaker: </strong> Pranaw Kumar is currently working as a Scientist 'E' /Joint Director at the Centre for Development of Advanced Computing (C-DAC), Mumbai. He has been associated with CDAC Mumbai for the last 16 years. His research interests include language and speech technologies. He works for Text-to-Speech Synthesis System (TTS), Automatic Speech Recognition (ASR) system for Indian Languages, and related applications. He has been involved in the development of Marathi, Odia, and Indian English TTS Systems, Hindi, Marathi, Odia, and English ASR Systems,  and various applications like TTS browser plugin, SMS Reader, TTS building Toolkit (TBT), Framework to integrate TTS system into websites, Speech Enabled IVRS System, Speech Enabled Multilingual chatbot, Speech Enabled Examination System for Visually Impaired Persons, etc. Currently he is Principal Investigator of a consortium based sub project  'Speech technologies in Indian languages' under the Project titled 'National Language Translation Mission (NLTM) : BHASHINI' for Mumbai centre. He was Principal Investigator of following two projects for Mumbai Centre: Natural Language Translation Mission - Automatic Speech Recognition in Indian English, Tamil, Hindi, and Text to Speech Synthesis for conversational speech in Indian languages. <br> Integration of 13 Indian Language TTS Systems with screen-readers for Windows, Linux, and Android platforms"
+            },
             
             {
-                time: "10:30 a.m - 11:00 a.m",
+                time: "11:30 a.m - 11:30 a.m",
                 title: "Mingling Moment",
                 speaker: "",
                 venue: "Refreshment Area",
@@ -315,7 +353,7 @@ const scheduleData = {
             },
 
             {
-                time: "11:00 a.m - 12:30 p.m",
+                time: "11:30 a.m - 12:30 p.m",
                 title: "Industry Perspective Talk - Attentive Multilingual Speech Encoder for Zero-Prior ASR",
                 speaker: "<strong>Dr. Debamalya Chakraborty </strong>",
                 venue: "Peacock Hall",
@@ -339,7 +377,7 @@ const scheduleData = {
             },
 
             {
-                time: "03:00 p.m - 04:30 p.m",
+                time: "03:00 p.m - 04:00 p.m",
                 title: "Industry Perspective Talk - Advancing Text-to-Speech Technology for Indic Languages: Motivation, Architectural Frameworks, and Performance Evaluation",
                 speaker: "<strong>Dr. Sreeram Ganji</strong>",
                 venue: "Peacock Hall",
@@ -347,7 +385,7 @@ const scheduleData = {
             },
 
             {
-                time: "04:30 p.m - 05:00 p.m",
+                time: "04:00 p.m - 04:30 p.m",
                 title: "Snack Interval",
                 speaker: "",
                 venue: "Refreshment Area",
@@ -355,19 +393,11 @@ const scheduleData = {
             },
 
             {
-                time: "05:00 p.m - 06:30 p.m",
+                time: "04:30 p.m onwards",
                 title: "Poster Presentation by Research Scholars",
                 speaker: "",
                 venue: "SAC Hall, R-Block, Ground Floor",
                 description: "Get insights on the ground breaking research work done by the research scholars in the field of Speech Processing."
-            },
-
-            {
-                time: "06:30 p.m onwards",
-                title: "Cultural Night",
-                speaker: "",
-                venue: "Will be updated later",
-                description: "N/A"
             },
 
             
@@ -418,7 +448,8 @@ const scheduleData = {
                 title: "Invited Talk - Insights into Speech Disorders: Bridging Research and Practice",
                 speaker: "<strong>Dr. Rakesh U K</strong>",
                 venue: "Peacock Hall",
-                description: "This talk explores the vital intersection between clinical research and practical applications in understanding and treating speech disorders. The discussion delves into cutting-edge research findings on various speech pathologies, examining how these insights inform therapeutic interventions, diagnostic tools, and technological solutions. By connecting laboratory discoveries with clinical practice, the talk highlights innovative approaches that enhance assessment accuracy, treatment effectiveness, and quality of life for individuals with speech disorders."
+                description: "This talk explores the vital intersection between clinical research and practical applications in understanding and treating speech disorders. The discussion delves into cutting-edge research findings on various speech pathologies, examining how these insights inform therapeutic interventions, diagnostic tools, and technological solutions. By connecting laboratory discoveries with clinical practice, the talk highlights innovative approaches that enhance assessment accuracy, treatment effectiveness, and quality of life for individuals with speech disorders.\
+                <br><br><strong>About Speaker: </strong><strong>Dr. U K RAKESH</strong> is an Associate Professor and Head of the Department of General Medicine at AIIMS Mangalagiri, holding qualifications of MBBS and MD in General Medicine. His professional interests span a diverse range of medical domains, including problem-solving in clinical medicine, investigating fever of unknown origin, analyzing metabolic syndromes, researching rare diseases, exploring neurological disorders, and studying medical technologies. Dr. Rakesh maintains active memberships in several prestigious medical associations, which include the Association Physicians of India (API), Clinical Infectious Diseases Society (CIDS), Society of Antimicrobial Stewardship Practices in India (SASPI), Epidemiology Foundation of India (EPI), and the International Society For Renal Research. His research portfolio is robust, encompassing projects such as stroke registry, microbiome studies in stroke, speech analysis in stroke patients, critical care research, infections, and medical technologies. Additionally, he has contributed numerous research articles to various national and international journals, demonstrating his commitment to advancing medical knowledge and clinical understanding."
             },
             {
                 time: "03:00 p.m - 04:00 p.m",
