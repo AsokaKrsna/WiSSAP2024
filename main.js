@@ -165,7 +165,7 @@ const scheduleData = {
                    language by modifying the grapheme-to-phoneme rules and using a non-native TTS system. This approach is \
                    motivated by the fact that languages form a dialect continuum, allowing for synthesis with a suitable \
                    monolingual TTS system.\
-                   <br><br><strong>About Speakers: <br></strong><Strong>Dr. Hema A Murty</strong> received a bachelor’s degree from Osmania University, Hyderabad, India, in 1980, a master’s degree from McMaster University, Hamilton, Canada, in 1986, and a PhD degree from the Indian Institute of Technology (IIT) Madras, Chennai, India, in 1992. She is currently an Honorary Emeritus Professor at the Department of Computer Science and Engineering, IIT Madras, and a Distinguished Visiting Faculty at Shiv Nadar University, Chennai. Her research interests include speech processing, computer networks, music information retrieval, computational brain research, and other areas of machine learning and signal processing. She is a Fellow of Asia-Pacific Artificial Intelligence Association, 2023, Fellow of ISCA (International Speech Communication Association), 2022 and a Fellow of INAE (Indian National Academy of Engineering), 2017.  She was awarded the IBM faculty award in 2006.  She has been involved in various projects funded by the Government of India (GoI). She was the Chief Investigator of a consortium project to build text-to-speech (TTS) systems in 13 Indian languages. She is currently leading the Speech Technology efforts for the Natural Language Translation Mission funded by GoI. \
+                   <br><br><strong>About Speakers: <br></strong><Strong>Dr. Hema A Murthy</strong> received a bachelor’s degree from Osmania University, Hyderabad, India, in 1980, a master’s degree from McMaster University, Hamilton, Canada, in 1986, and a PhD degree from the Indian Institute of Technology (IIT) Madras, Chennai, India, in 1992. She is currently an Honorary Emeritus Professor at the Department of Computer Science and Engineering, IIT Madras, and a Distinguished Visiting Faculty at Shiv Nadar University, Chennai. Her research interests include speech processing, computer networks, music information retrieval, computational brain research, and other areas of machine learning and signal processing. She is a Fellow of Asia-Pacific Artificial Intelligence Association, 2023, Fellow of ISCA (International Speech Communication Association), 2022 and a Fellow of INAE (Indian National Academy of Engineering), 2017.  She was awarded the IBM faculty award in 2006.  She has been involved in various projects funded by the Government of India (GoI). She was the Chief Investigator of a consortium project to build text-to-speech (TTS) systems in 13 Indian languages. She is currently leading the Speech Technology efforts for the Natural Language Translation Mission funded by GoI. \
                    <br><br> <strong> Dr. Anusha Prakash </strong> received the B.E. \
                    degree in Electrical and Electronics Engineering from Visvesvaraya Technological University, Belagavi, \
                    India, in 2012, the M.S. degree in Applied Mechanics from the Indian Institute of Technology (IIT) Madras,\
@@ -211,7 +211,15 @@ const scheduleData = {
                 title: "Invited Talk - Assistive speech technologies",
                 speaker: "<strong>Dr. P Vijayalakshmi</strong>",
                 venue: "Peacock Hall",
-                description: "<strong>Abstract: </strong>Will be updated soon"
+                description: "<strong>Abstract: </strong>Assistive speech technology - using speech technology for effective communication between people with articulatory disorders and others. How speech technologies such as ASR and TTS can be used right from assessment, augmentation to communication will be discussed in this talk.\
+                <br><br><strong>About Speaker: </strong> Dr. P. Vijayalakshmi, (IEEE M ’08-15, SM ’16 onwards) (Member IEEE Signal Processing Society) (Fellow IETE) Professor and Head in the Department of Electronics and Communication Engineering, has 28 years of teaching and research experience, including 4 years of exclusive research experience in the field of Speech signal processing.\
+                <br>Dr. P. Vijayalakshmi received B.E (ECE) degree first class with distinction from Bharathidasan University. She Completed M.E (Communication systems) from Regional Engineering College, Trichy (currently NIT, Trichy) and earned her Ph.D. degree from IIT Madras and worked as a doctoral trainee for a year at INRS – EMT, Montreal, Canada.\
+                <br>During her Ph.D she developed various speech recognition systems and a novel approach for detection and assessment of disordered speech such as hypernasal and dysarthric speech apart from analyzing normal speech. During her Ph.D she had an opportunity to work with Prof. Douglas O’Shaughnessy at National Institute of Scientific Research (INRS), Montreal, Canada as a doctoral trainee for a period of one year in a project titled “Speech recognition and analysis”.\
+                <br>She has published over 120 research publications in refereed international journals and in proceedings of international conferences. As a principal investigator she is currently involved in MeiTy funded project titled “Speech Assistive Technologies” – NLTM- BHASHINI.and a DST IMPRINT IIC project on “Development of Speech-to-speech translation systems for Hindi, Tamil and English” and “Development of bidirectional Hand-gesture recognition system” funded by DST-TIDE.  As co-PI she is currently involved in MeiTy, TVA, DST-CRG funded projects. Further she has completed several other projects as PI and Co-PI that are funded by MeiTy, New Delhi, AICTE, DST-TIDE, and Tamil Virtual Academy, a Government of Tamil Nadu organization, and two projects funded by SSN Trust as well. She is a recognized supervisor of Anna University and currently guiding Five fulltime Ph.D scholars in the field of Speech Technology.\
+                <br>Her areas of research include Speech Signal Processing, Speech Enabled Assistive technology, Speech synthesis, and Speech recognition.\
+                <br>She was instrumental in establishing the “Speech and language technologies lab” to carry out research in the field of speech technology. (website link – speech.ssn.edu.in).\
+                <br>She has published 2 patents, 2 book chapters,  19 Selected  Journal Publications,  2 funded projects,  15 External Funded Research Projects. \
+                <br>She has guided 10 PhD scholars, and currently guiding 2 PhD scholars. And Guided Around 30 M.E thesis and more than 30 UG projects."
             },
 
             {
@@ -286,7 +294,7 @@ const scheduleData = {
             {
                 time: "03:30 p.m - 04:30 p.m",
                 title: "Invited Talk - Spoken Language Identification Techniques for Indian Languages",
-                speaker: "<strong>Dileep A D</strong>",
+                speaker: "<strong>Dr. Dileep A D</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
@@ -303,7 +311,10 @@ const scheduleData = {
                 title: "Invited Talk - Securing the Audio Domain: Cyber Threats and Effective Mitigation Strategies",
                 speaker: "<strong>Dr. Arun Sankar M S</strong>",
                 venue: "Peacock Hall",
-                description: "<strong>Abstract: </strong>Will be updated soon"
+                description: "<strong>Abstract: </strong>The use of voice as an interface for digital systems has gained popularity due to its hands-free convenience and the ability to communicate naturally in human language. This versatility has made voice interaction a cornerstone in applications like voice assistants, vehicles, and smart home devices. The voice communications could be for the purpose of both authenticating and controlling devices, leveraging the unique characteristics of human speech and advancements in voice technology. With speaker identification techniques, devices can recognize individual users, enabling personalized experiences such as providing customized calendar updates or music preferences. Voice is also widely employed for controlling devices, allowing users to execute tasks through spoken commands using speech recognition methods. These systems are designed to integrate seamlessly within connected ecosystems, such as smart homes and IoT platforms, further enhancing their functionality and user appeal.\
+                <br>Similar to other domains, the vulnerabilities in voice-enabled technologies exposed audio domain to cyberattacks which target systems such as voice assistants, speech and speaker recognition models. The cyberattacks include eavesdropping, where adversaries intercept audio data to extract sensitive information, adversarial manipulations of speech and speaker recognition models, and the growing menace of audio deepfakes which enables impersonation, fraud, and misinformation. Mitigating these attacks requires a multi-faceted approach which include implementing end-to-end encryption for secure audio transmission, employing advanced voice biometrics and liveness detection to prevent spoofing, and leveraging machine learning algorithms to detect and counter deepfake audio. Additionally, robust access control measures and user education on secure usage practices are essential to safeguarding the audio domain. By combining technological advancements with regulatory frameworks and public awareness, the resilience of audio systems against cyberattacks can be significantly enhanced.\
+                <br><br><strong>About Speaker: </strong>Dr. Arun Sankar M S is an Assistant Lecturer in the Department of Electronics Engineering and Communications South East Technology University Carlow Campus Ireland. He was a post-doctoral researcher in the department of Computer Science and Information Technology at University College Cork, Ireland where he was working on developing methods for enhancing the security of voice authentication systems especially for low resource devices such as personal voice assistants. He worked as faculty in various institutions around the world that include Cochin University of Science and Technology, Birla Institute of Technology International campuses in Bahrain and Oman.\
+                <br>He obtained his Bachelor's Degree in Electronics Engineering from National Institute of Technology Surat, Master’s Degree in VLSI Design from Anna University and PhD in signal processing for the work titled “Design and development of low bit rate speech coders with bit rate scalability and preservation of speaker specific features” from National Institute of Technology Calicut. His research interests are in speech processing, feature engineering, deep learning and signal processing techniques dedicated to advancing the field of research and driving innovation in the areas of audio, image, cyber security, health system and embedded devices."
             },
 
             {
@@ -332,7 +343,7 @@ const scheduleData = {
             {
                 time: "09:00 a.m - 10:00 a.m",
                 title: "Industry Perspective Talk - Speech recognition in noisy environments: Focus on far field and call communications",
-                speaker: "<strong>Vikram C M</strong>",
+                speaker: "<strong>Dr. Vikram C M</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
@@ -357,7 +368,8 @@ const scheduleData = {
                 title: "Industry Perspective Talk - Attentive Multilingual Speech Encoder for Zero-Prior ASR",
                 speaker: "<strong>Dr. Debamalya Chakraborty </strong>",
                 venue: "Peacock Hall",
-                description: "<strong>Abstract: </strong>Will be updated soon"
+                description: "<strong>Abstract: </strong>Multilingual ASR offers training, deployment and overall performance benefits, but models trained via simple data pooling are known to suffer from cross-lingual interference. Oracle language information (exact-prior) and language-specific parameters are usually leveraged to overcome this, but such approaches cannot enable seamless, truly multilingual experiences. Existing methods try to overcome this limitation by relying on inferred language information or language-agnostic mixtures-of-experts, but they incur additional run time complexity and/or training cost in addition to being less effective in streaming scenarios. Building on previous studies where models were trained to handle mixed-priors (i.e. knowledge that the underlying language belongs to a known group), this talk will be focused upon proposing a framework called Attentive Multilingual Speech Encoding (AMuSE), a method designed to match exact-prior performance in streaming and non-streaming scenarios even when nothing is known about the underlying language at run time (zero-prior). Leveraging AMuSE, we will discuss some experimental results and analysis on how to build a zero-prior enabled LLM-based ASR model that outperforms several exact-prior driven state-of-the-art benchmarks.\
+                <br><br><strong>About Speaker: </strong>Dr.  Debmalya Chakrabarty is currently working as Senior Applied Scientist at Amazon AGI ML with expertise in speech processing, auditory scene analysis, and machine learning for acoustic modeling. He holds a Ph.D. in Electrical and Computer Engineering from Johns Hopkins University. Debmalya has contributed significantly to improving Alexa's speech recognition frameworks catering to indic recognition, working on projects involving CTC-based acoustic models, semi-supervised learning, and Transformer/Conformer architectures with focus on Multilingual speech recognition. He has published extensively in prestigious venues like ICASSP and SLT on topics such as ASR, temporal dynamics augmented acoustic scene analysis, and speaker verification frameworks."
             },
             
             {
@@ -371,7 +383,7 @@ const scheduleData = {
             {
                 time: "02:00 p.m - 03:00 p.m",
                 title: "Invited Talk - Learning for machines: Insights from acoustic analyses",
-                speaker: "<strong>Priyankoo Sarmah</strong>",
+                speaker: "<strong>Dr. Priyankoo Sarmah</strong>",
                 venue: "Peacock Hall",
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
