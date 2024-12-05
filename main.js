@@ -348,7 +348,7 @@ const scheduleData = {
                 description: "<strong>Abstract: </strong>Will be updated soon"
             },
             {
-                time: "10:00 a.m - 11:00 p.m",
+                time: "10:00 a.m - 11:00 a.m",
                 title: "Industry Perspective Talk - Development of Text to Speech Synthesis System for Santhali - A Low Resource Language",
                 speaker: "<strong>Sri Pranaw Kumar</strong>",
                 venue: "Peacock Hall",
