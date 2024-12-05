@@ -245,7 +245,7 @@ const scheduleData = {
             },
             
             {
-                time: "09:30 a.m - 10:30 p.m",
+                time: "09:30 a.m - 10:30 a.m",
                 title: "Pannel Discussion - Future direction of Speech Processing in Indian Languages",
                 speaker: "",
                 venue: "Peacock Hall",
