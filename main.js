@@ -285,10 +285,11 @@ const scheduleData = {
 
             {
                 time: "02:30 p.m - 03:30 p.m",
-                title: "Invited Talk - Speech Processing using Deep Neural Networks (DNN)",
+                title: "Invited Talk -  Spectral masking for adversarial robustness of speaker verification systems",
                 speaker: "<strong>Dr. K Sri Rama Murthy</strong>",
                 venue: "Peacock Hall",
-                description: "<strong>Abstract: </strong>Will be updated soon"
+                description: "<strong>Abstract: </strong>Automatic speaker verification (ASV) is the task of authenticating the claimed identity of a speaker from his/her voice characteristics. Despite the improved performance achieved by deep neural network (DNN) based ASV systems, recent investigations exposed their vulnerability to adversarial attacks. Understanding the effect of adversarial noise on signal characteristics helps devise effective defense strategies. This talk presents a detailed analysis of adversarial noise characteristics and illustrates how the adversary manipulates the low-energy regions of the time-frequency representations to attack the ASV system. Finally, we demonstrate the effectiveness of the spectral masking technique in defending against adversarial attacks.\
+                <br><br><strong>About Speaker: </strong>Sri Rama Murty received B.Tech degree in Electronics & Communications Engineering from JNTU Hyderabad in 2002, and PhD in Computer Science & Engineering from IIT Madras in 2009. He joined the Department of Electrical Engineering at IIT Hyderabad as an Assistant Professor in 2009 and is currently a Professor in the same department. He is also an associate faculty member in the Department of Artificial Intelligence at IIT Hyderabad. He was Head of the Department of Electrical Engineering at IIT Hyderabad from 2017 to 2020. He has been an Associate Editor of IEEE Signal Processing Letters (SPL) since 2021. He was an organizing committee member & Exhibits chair of Interspeech - 2018, held in Hyderabad. He was a technical area chair for <b>Analysis of speech and audio signals</b>, Interspeech 2018 and 2020. His research interests include signal processing, speech analysis, machine learning, and deep learning."
             },
             
             {
